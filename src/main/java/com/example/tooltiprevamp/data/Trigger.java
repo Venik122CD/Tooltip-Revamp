@@ -19,17 +19,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/** Условие, при котором действие считается открытым. */
 public final class Trigger {
 
     public enum Type {
-        /** Кость/удобрение на блок, который реально можно удобрить. */
+
         BONEMEAL,
-        /** Правый клик предметом по блоку (простая проверка). */
+
         USE_ON_BLOCK,
-        /** Предмет умеет ItemAbility (axe_strip, axe_scrape, axe_wax_off...) и блок реально меняется. */
+
         ITEM_ABILITY,
-        /** Удар предметом по блокирующему щитом противнику. */
+
         DISABLE_SHIELD
     }
 
@@ -79,7 +78,6 @@ public final class Trigger {
         return false;
     }
 
-    /** Серверная проверка правого клика по блоку. */
     public boolean matchesBlockUse(ServerPlayer player, InteractionHand hand, BlockHitResult hit,
                                    ItemStack stack, Level level, BlockPos pos, BlockState state) {
         if (!blockMatches(state)) return false;

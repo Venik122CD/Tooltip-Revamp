@@ -13,7 +13,6 @@ import net.minecraft.util.profiling.ProfilerFiller;
 import java.util.HashMap;
 import java.util.Map;
 
-/** Читает data/<namespace>/item_actions/**.json */
 public class ActionLoader extends SimpleJsonResourceReloadListener {
     private static final Gson GSON = new GsonBuilder().create();
 

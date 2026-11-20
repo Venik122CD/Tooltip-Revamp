@@ -11,7 +11,6 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
 import java.util.HashMap;
 import java.util.Map;
 
-/** Сервер -> клиент: все определения действий (как JSON-строки). */
 public record ActionsPayload(Map<ResourceLocation, String> actions) implements CustomPacketPayload {
     public static final CustomPacketPayload.Type<ActionsPayload> TYPE =
             new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath(TooltipRevamp.MODID, "actions"));

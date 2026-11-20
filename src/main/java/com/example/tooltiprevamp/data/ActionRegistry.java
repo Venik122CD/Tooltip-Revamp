@@ -11,11 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Хранилище действий. Два независимых экземпляра:
- * SERVER - наполняется датапаками, CLIENT - приходит пакетом с сервера.
- * (Раньше он был один, и выход из мира стирал данные сервера в одиночной игре.)
- */
 public final class ActionRegistry {
     public static final ActionRegistry SERVER = new ActionRegistry();
     public static final ActionRegistry CLIENT = new ActionRegistry();

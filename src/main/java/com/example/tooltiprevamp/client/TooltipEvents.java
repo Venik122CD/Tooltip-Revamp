@@ -24,7 +24,6 @@ import java.util.Optional;
 public final class TooltipEvents {
     private TooltipEvents() {}
 
-    /** Чисто чёрный фон и тёмно-серая рамка. */
     public static void onColor(RenderTooltipEvent.Color event) {
         if (!ClientConfig.ENABLED.get() || event.getItemStack().isEmpty()) return;
         event.setBackgroundStart(RevampClientTooltip.COLOR_BLACK);
@@ -33,7 +32,6 @@ public final class TooltipEvents {
         event.setBorderEnd(RevampClientTooltip.COLOR_BORDER);
     }
 
-    /** Заменяет обычные строки тултипа одним нашим компонентом. */
     public static void onGather(RenderTooltipEvent.GatherComponents event) {
         if (!ClientConfig.ENABLED.get()) return;
 
@@ -68,10 +66,6 @@ public final class TooltipEvents {
         return text instanceof Component c ? c : Component.literal(text.getString());
     }
 
-    /**
-     * Описание берётся из перевода tooltiprevamp.description.<namespace>.<path>
-     * (для зелий ещё и ...<path>.<id_зелья>), поэтому его легко добавить ресурспаком или другим модом.
-     */
     private static Component descriptionFor(ItemStack stack) {
         ResourceLocation id = BuiltInRegistries.ITEM.getKey(stack.getItem());
         String base = "tooltiprevamp.description." + id.getNamespace() + "." + id.getPath().replace('/', '.');

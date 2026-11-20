@@ -20,7 +20,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/** Хранит открытые действия в persistent data игрока и синхронизирует их с клиентом. */
 public final class Discoveries {
     public static final String KEY = "tooltiprevamp_discovered";
 

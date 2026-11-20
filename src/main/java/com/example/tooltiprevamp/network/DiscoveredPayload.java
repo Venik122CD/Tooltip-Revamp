@@ -11,7 +11,6 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Сервер -> клиент: какие действия игрок уже открыл. */
 public record DiscoveredPayload(List<ResourceLocation> ids) implements CustomPacketPayload {
     public static final CustomPacketPayload.Type<DiscoveredPayload> TYPE =
             new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath(TooltipRevamp.MODID, "discovered"));
