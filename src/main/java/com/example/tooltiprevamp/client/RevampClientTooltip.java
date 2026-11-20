@@ -16,15 +16,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Рисует весь тултип предмета:
- *   [ рамка с названием, чуть выступающая над основной рамкой ]
- *   описание
- *   ---------------
- *   страница 1: оригинальный тултип   |   страница 2 (Ctrl): список действий
- *   ---------------
- *   индикатор страниц
- */
 public class RevampClientTooltip implements ClientTooltipComponent {
     public static final int COLOR_BLACK = 0xFF000000;
     public static final int COLOR_BORDER = 0xFF3F3F3F;
@@ -36,7 +27,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
     private static final int COLOR_DASH_ON = 0xFFFFFFFF;
     private static final int COLOR_DASH_OFF = 0xFF666666;
 
-    /** Доп. отступ, чтобы расстояние от текста до рамки было 4 пикселя (у ваниллы 3). */
     private static final int PAD = 1;
     private static final int TITLE_PAD_X = 5;
     private static final int TITLE_BOX_H = 13;
@@ -93,7 +83,7 @@ public class RevampClientTooltip implements ClientTooltipComponent {
 
     @Override
     public int getHeight() {
-        // Ванилла вычитает 2 из высоты, если в тултипе один компонент.
+
         return layout(Minecraft.getInstance().font).height() + (data.alone() ? 2 : 0);
     }
 
@@ -103,8 +93,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
                 || InputConstants.isKeyDown(window, InputConstants.KEY_RCONTROL)
                 || Screen.hasControlDown();
     }
-
-    // ------------------------------------------------------------------ layout
 
     private Layout layout(Font font) {
         if (layout != null) return layout;
@@ -171,8 +159,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
         return w;
     }
 
-    // ------------------------------------------------------------------ rows
-
     private static Row textRow(List<FormattedCharSequence> lines) {
         return new Row(lines.size() * LINE_H, (g, f, x, y, w) -> {
             for (int i = 0; i < lines.size(); i++) {
@@ -187,7 +173,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
                 g.fill(x - PAD - 3, y + 2, x + w + PAD + 3, y + 3, COLOR_BORDER));
     }
 
-    /** Маленькие чёрточки: одна - есть действия; две - две страницы, белая показывает открытую. */
     private static Row footerRow(boolean twoPages, boolean actionsOpen) {
         return new Row(FOOTER_H, (g, f, x, y, w) -> {
             if (twoPages) {
@@ -263,7 +248,7 @@ public class RevampClientTooltip implements ClientTooltipComponent {
             for (int ti = 0; ti < line.size(); ti++) {
                 Tok t = line.get(ti);
                 if (t.hidden && !known) {
-                    // слово ещё не открыто - рисуем закрашенный блок
+
                     boolean merge = ti + 1 < line.size()
                             && line.get(ti + 1).hidden
                             && line.get(ti + 1).highlight == t.highlight;
@@ -277,8 +262,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
         }
     }
 
-    // ------------------------------------------------------------------ render
-
     @Override
     public void renderImage(Font font, int x, int y, GuiGraphics g) {
         Layout l = layout(font);
@@ -289,7 +272,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
             return;
         }
 
-        // Заголовок в своей рамке, налезающей на верхнюю границу тултипа
         int boxW = l.titleWidth() + TITLE_PAD_X * 2 + 2;
         int bx = cx + (l.contentWidth() - boxW) / 2;
         int by = y + TITLE_BOX_TOP;
