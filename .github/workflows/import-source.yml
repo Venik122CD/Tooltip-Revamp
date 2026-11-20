@@ -13,106 +13,52 @@ jobs:
   import:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Restore and extract source archive
+      - uses: actions/checkout@v4
+      - name: Extract project sources
         run: |
-          cat source.parts/* | base64 -d > tooltip-revamp-source.zip
-          unzip -q tooltip-revamp-source.zip
+          tar -xJf source.tar.xz
           cp -a tooltip-revamp/. .
-          rm -rf tooltip-revamp source.parts source.ready tooltip-revamp-source.zip
+          rm -rf tooltip-revamp source.tar.xz source.ready
           cat > README.md <<'EOF'
           # Tooltip Revamp
 
           Tooltip Revamp overhauls Minecraft item tooltips and adds discoverable item interactions.
 
           ## Features
-
           - Pure black tooltip background with a dark gray border.
           - Centered text with consistent spacing.
           - Item names displayed in a separate framed header.
-          - Descriptions and visual separators below the item name.
           - Hold **Ctrl** to open the item actions page.
           - Undiscovered action text is concealed until the player performs the corresponding action.
           - Discoveries are saved to player data and remain unlocked permanently.
 
           ## Build
-
           This project targets Minecraft **1.21.1**, NeoForge, and Java 21.
-
-          Use Gradle 8.10 or newer:
-
-          ```bash
-          gradle build
-          ```
-
+          Use Gradle 8.14 or newer: `gradle build`.
           The built JAR is generated in `build/libs`.
 
           ## Commands
-
           - `/tooltiprevamp reset` — reset all discovered actions.
           - `/tooltiprevamp reveal_all` — reveal every action.
 
           ## Item descriptions
-
-          Descriptions use translation keys in this format:
-
-          ```text
-          tooltiprevamp.description.<namespace>.<item_path>
-          ```
-
-          Potion descriptions may include the potion ID as an additional suffix. Add translations to the language files or provide them through a resource pack.
+          Use translation keys in the format `tooltiprevamp.description.<namespace>.<item_path>`.
+          Potion descriptions may include the potion ID as an additional suffix.
 
           ## Datapack-defined item actions
-
-          Create JSON files under `data/<namespace>/item_actions/<name>.json`.
-
-          Example:
-
-          ```json
-          {
-            "items": ["minecraft:bone_meal"],
-            "text": "tooltiprevamp.action.bone_meal.plants",
-            "order": 0,
-            "trigger": {
-              "type": "bonemeal",
-              "blocks": ["#minecraft:crops"]
-            }
-          }
-          ```
-
+          Place JSON files under `data/<namespace>/item_actions/<name>.json`.
           The `items` field accepts item IDs, item tags (prefixed with `#`), or objects containing item and potion identifiers.
+          Text markup: `[word]` is a visible blue hint, `{word}` is a concealed blue hint block, and `<word>` is visible gray text. Unmarked text remains concealed until discovered.
 
-          Text markup:
-          - `[word]` — visible blue hint.
-          - `{word}` — concealed blue hint block.
-          - `<word>` — visible gray text.
-          - Unmarked text remains concealed until the action is discovered.
-
-          Supported trigger types:
-          - `bonemeal` — using bone meal on a block that can actually be fertilized.
+          Supported triggers:
+          - `bonemeal` — bone meal on a block that can actually be fertilized.
           - `use_on_block` — right-clicking a matching block with the item.
-          - `item_ability` — item abilities such as `axe_strip`, `axe_scrape`, `axe_wax_off`, `shovel_flatten`, and `hoe_till`; the block must actually change.
-          - `disable_shield` — hitting a blocking target with an axe.
+          - `item_ability` — abilities such as `axe_strip`, `axe_scrape`, `axe_wax_off`, `shovel_flatten`, and `hoe_till`; the block must actually change.
+          - `disable_shield` — hitting a target that is blocking with a shield.
 
           ## License
-
           MIT
           EOF
-          python3 - <<'PY'
-          from pathlib import Path
-          p = Path("gradle.properties")
-          s = p.read_text()
-          s = s.replace("neo_version=21.1.172", "neo_version=21.1.249")
-          p.write_text(s)
-          p = Path("build.gradle")
-          s = p.read_text().replace("net.neoforged.moddev' version '2.0.78", "net.neoforged.moddev' version '2.0.146")
-          p.write_text(s)
-          p = Path("src/main/resources/META-INF/neoforge.mods.toml")
-          s = p.read_text()
-          s = s.replace("Переработанные тултипы: чёрный фон, центрированный текст, заголовок в рамке.\nЗажми Ctrl, чтобы увидеть страницу скрытых применений предмета, которые открываются, когда ты их выполнишь.", "Overhauled item tooltips with a black background, centered text, and a framed title. Hold Ctrl to view hidden item interactions and discover them by performing the corresponding actions.")
-          p.write_text(s)
-          PY
           cat > .gitignore <<'EOF'
           .gradle/
           build/
@@ -121,20 +67,29 @@ jobs:
           *.iml
           .idea/
           EOF
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("gradle.properties")
+          s = p.read_text().replace("neo_version=21.1.172", "neo_version=21.1.249")
+          p.write_text(s)
+          p = Path("build.gradle")
+          s = p.read_text().replace("net.neoforged.moddev' version '2.0.78", "net.neoforged.moddev' version '2.0.146")
+          p.write_text(s)
+          p = Path("src/main/resources/META-INF/neoforge.mods.toml")
+          s = p.read_text().replace("Переработанные тултипы: чёрный фон, центрированный текст, заголовок в рамке.\nЗажми Ctrl, чтобы увидеть страницу скрытых применений предмета, которые открываются, когда ты их выполнишь.", "Overhauled item tooltips with a black background, centered text, and a framed title. Hold Ctrl to view hidden item interactions and discover them by performing the corresponding actions.")
+          p.write_text(s)
+          PY
           mkdir -p .github/workflows
           cat > .github/workflows/build.yml <<'EOF'
           name: Build
-
           on:
             push:
               branches: [main]
             pull_request:
               branches: [main]
             workflow_dispatch:
-
           permissions:
             contents: read
-
           jobs:
             build:
               runs-on: ubuntu-latest
