@@ -11,7 +11,6 @@ import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.PotionContents;
 
-/** "minecraft:bone_meal", "#minecraft:axes" или {"item": "minecraft:potion", "potion": "minecraft:water"}. */
 public record ItemMatcher(boolean tag, ResourceLocation id, ResourceLocation potion) {
 
     public static ItemMatcher parse(JsonElement element) {
