@@ -44,7 +44,6 @@ jobs:
           ## Datapack-defined item actions
           Place JSON files under `data/<namespace>/item_actions/<name>.json`.
           Text markup: `[word]` is a visible blue hint, `{word}` is a concealed blue hint block, and `<word>` is visible gray text.
-
           Supported triggers: `bonemeal`, `use_on_block`, `item_ability`, and `disable_shield`.
 
           ## License
@@ -67,38 +66,8 @@ jobs:
           p=Path("src/main/resources/META-INF/neoforge.mods.toml")
           p.write_text(p.read_text().replace("Переработанные тултипы: чёрный фон, центрированный текст, заголовок в рамке.\nЗажми Ctrl, чтобы увидеть страницу скрытых применений предмета, которые открываются, когда ты их выполнишь.","Overhauled item tooltips with a black background, centered text, and a framed title. Hold Ctrl to view hidden item interactions and discover them by performing the corresponding actions."))
           PY
-          mkdir -p .github/workflows
-          cat > .github/workflows/build.yml <<'EOF'
-          name: Build
-          on:
-            push:
-              branches: [main]
-            pull_request:
-              branches: [main]
-            workflow_dispatch:
-          permissions:
-            contents: read
-          jobs:
-            build:
-              runs-on: ubuntu-latest
-              steps:
-                - uses: actions/checkout@v4
-                - uses: actions/setup-java@v4
-                  with:
-                    distribution: temurin
-                    java-version: 21
-                - uses: gradle/actions/setup-gradle@v4
-                  with:
-                    gradle-version: 8.14
-                - run: gradle build --no-daemon
-                - uses: actions/upload-artifact@v4
-                  with:
-                    name: Tooltip-Revamp
-                    path: build/libs/*.jar
-                    if-no-files-found: error
-          EOF
           git add -A
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Import Tooltip Revamp sources and configure CI"
+          git commit -m "Import Tooltip Revamp sources and update project metadata"
           git push
