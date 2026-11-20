@@ -55,7 +55,7 @@ public final class TooltipEvents {
             }
         }
 
-        List<ItemAction> actions = ActionRegistry.forStack(stack);
+        List<ItemAction> actions = ActionRegistry.CLIENT.forStack(stack);
         int maxLine = Math.max(120, Math.min(event.getScreenWidth() - 40, 260));
         RevampTooltipData data = new RevampTooltipData(title, descriptionFor(stack), body, actions, maxLine, others.isEmpty());
 

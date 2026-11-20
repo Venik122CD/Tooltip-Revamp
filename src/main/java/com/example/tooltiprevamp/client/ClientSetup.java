@@ -24,6 +24,6 @@ public final class ClientSetup {
 
     private static void onLogout(ClientPlayerNetworkEvent.LoggingOut event) {
         ClientDiscoveries.clear();
-        ActionRegistry.clear();
+        ActionRegistry.CLIENT.clear();
     }
 }

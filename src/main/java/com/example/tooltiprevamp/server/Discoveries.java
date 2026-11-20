@@ -60,7 +60,7 @@ public final class Discoveries {
 
     public static void revealAll(ServerPlayer player) {
         ListTag list = new ListTag();
-        for (ItemAction a : ActionRegistry.all()) {
+        for (ItemAction a : ActionRegistry.SERVER.all()) {
             list.add(StringTag.valueOf(a.id().toString()));
         }
         player.getPersistentData().put(KEY, list);

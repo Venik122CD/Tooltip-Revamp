@@ -7,7 +7,8 @@ modId="tooltiprevamp"
 version="1.0.0"
 displayName="Tooltip Revamp"
 description='''
-Overhauled item tooltips with a black background, centered text, and a framed title. Hold Ctrl to view hidden item interactions and discover them by performing the corresponding actions.
+Переработанные тултипы: чёрный фон, центрированный текст, заголовок в рамке.
+Зажми Ctrl, чтобы увидеть страницу скрытых применений предмета, которые открываются, когда ты их выполнишь.
 '''
 
 [[dependencies.tooltiprevamp]]

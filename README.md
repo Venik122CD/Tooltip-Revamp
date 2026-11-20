@@ -1,31 +1,48 @@
-# Tooltip Revamp
+# Tooltip Revamp (NeoForge 1.21.1)
 
-Tooltip Revamp overhauls Minecraft item tooltips and adds discoverable item interactions.
+Переработанные тултипы предметов + «открываемые» применения предметов.
 
-## Features
-- Pure black tooltip background with a dark gray border.
-- Centered text with consistent spacing.
-- Item names displayed in a separate framed header.
-- Hold **Ctrl** to open the item actions page.
-- Undiscovered action text is concealed until the player performs the corresponding action.
-- Discoveries are saved to player data and remain unlocked permanently.
+## Что делает
+- Чисто чёрный фон, тёмно-серая рамка, текст по центру, отступ до рамки 4 px.
+- Название предмета в отдельной рамке сверху, ниже — описание, разделители.
+- Если у предмета есть действия — внизу маленькая чёрточка (две, если есть и обычный тултип).
+- **Зажми Ctrl** — страница действий. Неоткрытые части закрашены (серые блоки), синие слова — подсказки.
+  Выполнил действие в игре — строка раскрывается навсегда (хранится в данных игрока).
 
-## Build
-This project targets Minecraft **1.21.1**, NeoForge, and Java 21.
-Use Gradle 8.14 or newer: `gradle build`.
-The built JAR is generated in `build/libs`.
+## Сборка
+Самый надёжный путь: скачай официальный MDK для 1.21.1
+(https://github.com/NeoForgeMDKs/MDK-1.21.1-ModDevGradle), скопируй из этого архива папку `src`
+и `gradle.properties` (при необходимости обнови `neo_version`), затем:
 
-## Commands
-- `/tooltiprevamp reset` — reset all discovered actions.
-- `/tooltiprevamp reveal_all` — reveal every action.
+    ./gradlew build        # jar в build/libs
+    ./gradlew runClient    # запуск для теста
 
-## Item descriptions
-Use translation keys in the format `tooltiprevamp.description.<namespace>.<item_path>`.
+Можно собирать и этим проектом, но нужен gradle wrapper (`gradle wrapper --gradle-version 8.10`).
 
-## Datapack-defined item actions
-Place JSON files under `data/<namespace>/item_actions/<name>.json`.
-Text markup: `[word]` is a visible blue hint, `{word}` is a concealed blue hint block, and `<word>` is visible gray text.
-Supported triggers: `bonemeal`, `use_on_block`, `item_ability`, and `disable_shield`.
+## Тестовые команды (op)
+    /tooltiprevamp reset        — забыть все открытия
+    /tooltiprevamp reveal_all   — открыть всё
 
-## License
-MIT
+## Описания предметов
+Берутся из перевода `tooltiprevamp.description.<namespace>.<путь_предмета>`
+(для зелий дополнительно `...<путь>.<id_зелья>`). Добавляй в lang-файлы или ресурспак.
+
+## Свои действия (датапак / другой мод)
+Файл `data/<namespace>/item_actions/<имя>.json`:
+
+    {
+      "items": ["minecraft:bone_meal"],             // id, "#тег" или {"item": "...", "potion": "..."}
+      "text": "tooltiprevamp.action.bone_meal.plants",  // ключ перевода или сам текст
+      "order": 0,                                   // порядок в списке
+      "trigger": { "type": "bonemeal", "blocks": ["#minecraft:crops"] }
+    }
+
+Разметка текста: `[слово]` — видимая синяя подсказка, `{слово}` — скрытый синий блок,
+`<слово>` — видимое серое, остальное скрыто до открытия.
+
+Типы триггеров:
+- `bonemeal` — удобрение по блоку (`blocks`), который реально можно удобрить;
+- `use_on_block` — ПКМ предметом по блоку (`blocks`);
+- `item_ability` — `ability`: `axe_strip`, `axe_scrape`, `axe_wax_off`, `shovel_flatten`, `hoe_till`…
+  (срабатывает, только если блок реально изменится);
+- `disable_shield` — удар предметом по блокирующему щитом (для топоров).

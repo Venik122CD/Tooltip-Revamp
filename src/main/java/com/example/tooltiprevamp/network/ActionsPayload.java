@@ -43,6 +43,6 @@ public record ActionsPayload(Map<ResourceLocation, String> actions) implements C
     }
 
     public static void handle(ActionsPayload payload, IPayloadContext context) {
-        context.enqueueWork(() -> ActionRegistry.setFromSync(payload.actions));
+        context.enqueueWork(() -> ActionRegistry.CLIENT.setFromSync(payload.actions));
     }
 }

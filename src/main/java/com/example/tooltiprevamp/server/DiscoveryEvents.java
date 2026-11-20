@@ -47,7 +47,7 @@ public final class DiscoveryEvents {
     }
 
     private static void onDatapackSync(OnDatapackSyncEvent event) {
-        ActionsPayload payload = new ActionsPayload(ActionRegistry.raw());
+        ActionsPayload payload = new ActionsPayload(ActionRegistry.SERVER.raw());
         event.getRelevantPlayers().forEach(player -> {
             PacketDistributor.sendToPlayer(player, payload);
             Discoveries.sync(player);
@@ -56,7 +56,7 @@ public final class DiscoveryEvents {
 
     private static void onLogin(PlayerEvent.PlayerLoggedInEvent event) {
         if (event.getEntity() instanceof ServerPlayer player) {
-            PacketDistributor.sendToPlayer(player, new ActionsPayload(ActionRegistry.raw()));
+            PacketDistributor.sendToPlayer(player, new ActionsPayload(ActionRegistry.SERVER.raw()));
             Discoveries.sync(player);
         }
     }
@@ -79,7 +79,7 @@ public final class DiscoveryEvents {
         ItemStack stack = event.getItemStack();
         if (stack.isEmpty()) return;
 
-        List<ItemAction> candidates = ActionRegistry.forStack(stack);
+        List<ItemAction> candidates = ActionRegistry.SERVER.forStack(stack);
         if (candidates.isEmpty()) return;
 
         Level level = event.getLevel();
@@ -101,7 +101,7 @@ public final class DiscoveryEvents {
         if (!victim.isBlocking()) return;
 
         ItemStack weapon = attacker.getMainHandItem();
-        List<ItemAction> candidates = ActionRegistry.forStack(weapon);
+        List<ItemAction> candidates = ActionRegistry.SERVER.forStack(weapon);
         if (candidates.isEmpty()) return;
 
         for (ItemAction action : candidates) {

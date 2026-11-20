@@ -2,6 +2,7 @@ package com.example.tooltiprevamp.client;
 
 import com.example.tooltiprevamp.data.ClientDiscoveries;
 import com.example.tooltiprevamp.data.ItemAction;
+import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
@@ -96,13 +97,20 @@ public class RevampClientTooltip implements ClientTooltipComponent {
         return layout(Minecraft.getInstance().font).height() + (data.alone() ? 2 : 0);
     }
 
+    private static boolean isActionKeyDown() {
+        long window = Minecraft.getInstance().getWindow().getWindow();
+        return InputConstants.isKeyDown(window, InputConstants.KEY_LCONTROL)
+                || InputConstants.isKeyDown(window, InputConstants.KEY_RCONTROL)
+                || Screen.hasControlDown();
+    }
+
     // ------------------------------------------------------------------ layout
 
     private Layout layout(Font font) {
         if (layout != null) return layout;
 
         boolean hasActions = !data.actions().isEmpty();
-        boolean showActions = hasActions && Screen.hasControlDown();
+        boolean showActions = hasActions && isActionKeyDown();
 
         List<FormattedCharSequence> desc = new ArrayList<>();
         if (data.description() != null) {

@@ -35,7 +35,7 @@ public class ActionLoader extends SimpleJsonResourceReloadListener {
             }
         });
 
-        ActionRegistry.set(parsed, raw);
+        ActionRegistry.SERVER.set(parsed, raw);
         TooltipRevamp.LOGGER.info("Loaded {} item actions", parsed.size());
     }
 }

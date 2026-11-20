@@ -11,22 +11,29 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/** Хранилище действий. На сервере наполняется датапаками, на клиенте - пакетом синхронизации. */
+/**
+ * Хранилище действий. Два независимых экземпляра:
+ * SERVER - наполняется датапаками, CLIENT - приходит пакетом с сервера.
+ * (Раньше он был один, и выход из мира стирал данные сервера в одиночной игре.)
+ */
 public final class ActionRegistry {
+    public static final ActionRegistry SERVER = new ActionRegistry();
+    public static final ActionRegistry CLIENT = new ActionRegistry();
+
     private static final Comparator<ItemAction> ORDER =
             Comparator.comparingInt(ItemAction::order).thenComparing(ItemAction::id);
 
-    private static volatile List<ItemAction> actions = List.of();
-    private static volatile Map<ResourceLocation, String> rawJson = Map.of();
+    private volatile List<ItemAction> actions = List.of();
+    private volatile Map<ResourceLocation, String> rawJson = Map.of();
 
     private ActionRegistry() {}
 
-    public static void set(Map<ResourceLocation, ItemAction> parsed, Map<ResourceLocation, String> raw) {
+    public void set(Map<ResourceLocation, ItemAction> parsed, Map<ResourceLocation, String> raw) {
         actions = parsed.values().stream().sorted(ORDER).toList();
         rawJson = Map.copyOf(raw);
     }
 
-    public static void setFromSync(Map<ResourceLocation, String> raw) {
+    public void setFromSync(Map<ResourceLocation, String> raw) {
         Map<ResourceLocation, ItemAction> parsed = new HashMap<>();
         for (Map.Entry<ResourceLocation, String> e : raw.entrySet()) {
             try {
@@ -36,22 +43,23 @@ public final class ActionRegistry {
             }
         }
         set(parsed, raw);
+        TooltipRevamp.LOGGER.info("Client received {} item actions", parsed.size());
     }
 
-    public static void clear() {
+    public void clear() {
         actions = List.of();
         rawJson = Map.of();
     }
 
-    public static Map<ResourceLocation, String> raw() {
+    public Map<ResourceLocation, String> raw() {
         return rawJson;
     }
 
-    public static List<ItemAction> all() {
+    public List<ItemAction> all() {
         return actions;
     }
 
-    public static List<ItemAction> forStack(ItemStack stack) {
+    public List<ItemAction> forStack(ItemStack stack) {
         if (stack.isEmpty()) return List.of();
         List<ItemAction> out = null;
         for (ItemAction a : actions) {
