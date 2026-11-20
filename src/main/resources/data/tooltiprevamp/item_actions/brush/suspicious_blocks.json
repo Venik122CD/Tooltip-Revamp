@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:brush"
+  ],
+  "text": "tooltiprevamp.action.brush.suspicious_blocks",
+  "order": 0,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:suspicious_sand",
+      "minecraft:suspicious_gravel"
+    ]
+  }
+}

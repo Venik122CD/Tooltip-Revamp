@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:shears"
+  ],
+  "text": "tooltiprevamp.action.shears.trim_growth",
+  "order": 2,
+  "trigger": {
+    "type": "item_ability",
+    "ability": "shears_trim"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:glass_bottle"
+  ],
+  "text": "tooltiprevamp.action.glass_bottle.collect_honey",
+  "order": 0,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:beehive",
+      "minecraft:bee_nest"
+    ]
+  }
+}
