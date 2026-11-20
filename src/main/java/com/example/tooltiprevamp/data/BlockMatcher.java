@@ -6,7 +6,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.state.BlockState;
 
-/** "minecraft:cauldron" или "#minecraft:crops". */
 public record BlockMatcher(boolean tag, ResourceLocation id) {
 
     public static BlockMatcher parse(String value) {
