@@ -9,13 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Одно "открываемое" действие предмета. Загружается из data/<ns>/item_actions/*.json.
- *
- * @param text ключ перевода или готовая строка с разметкой:
- *             [слово] - подсказка (видна всегда, синяя), {слово} - скрытое синее,
- *             &lt;слово&gt; - видимое серое, всё остальное - скрыто до открытия.
- */
 public record ItemAction(ResourceLocation id, List<ItemMatcher> items, String text, int order, Trigger trigger) {
 
     public static ItemAction parse(ResourceLocation id, JsonObject json) {
