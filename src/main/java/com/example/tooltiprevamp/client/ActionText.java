@@ -5,11 +5,6 @@ import net.minecraft.locale.Language;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Разметка текста действия:
- * [слово] - подсказка (синяя, видна всегда); {слово} - скрытое синее;
- * &lt;слово&gt; - видимое серое; остальное - скрыто до открытия.
- */
 public final class ActionText {
     private ActionText() {}
 
