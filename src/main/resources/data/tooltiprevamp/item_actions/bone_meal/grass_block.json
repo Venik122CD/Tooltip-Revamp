@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:bone_meal"
+  ],
+  "text": "tooltiprevamp.action.bone_meal.grass_block",
+  "order": 3,
+  "trigger": {
+    "type": "bonemeal",
+    "blocks": [
+      "minecraft:grass_block"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:bone_meal"
+  ],
+  "text": "tooltiprevamp.action.bone_meal.rooted_dirt",
+  "order": 5,
+  "trigger": {
+    "type": "bonemeal",
+    "blocks": [
+      "minecraft:rooted_dirt"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "items": [
+    "#minecraft:axes"
+  ],
+  "text": "tooltiprevamp.action.axe.bark",
+  "order": 3,
+  "trigger": {
+    "type": "item_ability",
+    "ability": "axe_strip"
+  }
+}

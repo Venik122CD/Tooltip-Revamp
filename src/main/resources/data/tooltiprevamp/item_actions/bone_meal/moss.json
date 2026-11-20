@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:bone_meal"
+  ],
+  "text": "tooltiprevamp.action.bone_meal.moss",
+  "order": 4,
+  "trigger": {
+    "type": "bonemeal",
+    "blocks": [
+      "minecraft:moss_block"
+    ]
+  }
+}

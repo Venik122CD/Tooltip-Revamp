@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:bone_meal"
+  ],
+  "text": "tooltiprevamp.action.bone_meal.plants",
+  "order": 0,
+  "trigger": {
+    "type": "bonemeal",
+    "blocks": [
+      "#minecraft:crops",
+      "#minecraft:saplings",
+      "#minecraft:flowers"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "item": "minecraft:potion",
+      "potion": "minecraft:water"
+    }
+  ],
+  "text": "tooltiprevamp.action.water_bottle.mud",
+  "order": 1,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "#minecraft:convertable_to_mud"
+    ]
+  }
+}

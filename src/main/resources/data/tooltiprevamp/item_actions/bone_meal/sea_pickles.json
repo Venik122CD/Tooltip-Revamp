@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:bone_meal"
+  ],
+  "text": "tooltiprevamp.action.bone_meal.sea_pickles",
+  "order": 1,
+  "trigger": {
+    "type": "bonemeal",
+    "blocks": [
+      "minecraft:sea_pickle"
+    ]
+  }
+}

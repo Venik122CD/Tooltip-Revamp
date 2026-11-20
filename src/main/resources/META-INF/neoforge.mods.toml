@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="tooltiprevamp"
+version="1.0.0"
+displayName="Tooltip Revamp"
+description='''
+Overhauled item tooltips with a black background, centered text, and a framed title. Hold Ctrl to view hidden item interactions and discover them by performing the corresponding actions.
+'''
+
+[[dependencies.tooltiprevamp]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.tooltiprevamp]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"

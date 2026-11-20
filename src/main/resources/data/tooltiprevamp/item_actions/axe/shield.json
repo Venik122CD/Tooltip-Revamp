@@ -1,0 +1,10 @@
+{
+  "items": [
+    "#minecraft:axes"
+  ],
+  "text": "tooltiprevamp.action.axe.shield",
+  "order": 0,
+  "trigger": {
+    "type": "disable_shield"
+  }
+}
