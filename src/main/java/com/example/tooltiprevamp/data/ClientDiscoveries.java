@@ -5,7 +5,6 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.Collection;
 import java.util.Set;
 
-/** Копия списка открытых действий на стороне клиента (приходит с сервера). */
 public final class ClientDiscoveries {
     private static volatile Set<ResourceLocation> discovered = Set.of();
 
