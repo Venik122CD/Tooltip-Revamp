@@ -25,7 +25,6 @@ import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.List;
 
-/** Серверная логика: загрузка действий, синхронизация и срабатывание триггеров. */
 public final class DiscoveryEvents {
     private DiscoveryEvents() {}
 
@@ -39,8 +38,6 @@ public final class DiscoveryEvents {
         bus.addListener(EventPriority.LOWEST, DiscoveryEvents::onRightClickBlock);
         bus.addListener(DiscoveryEvents::onIncomingDamage);
     }
-
-    // ---------- загрузка / синхронизация ----------
 
     private static void onAddReloadListeners(AddReloadListenerEvent event) {
         event.addListener(new ActionLoader());
@@ -70,8 +67,6 @@ public final class DiscoveryEvents {
     private static void onClone(PlayerEvent.Clone event) {
         Discoveries.copy(event.getOriginal(), event.getEntity());
     }
-
-    // ---------- триггеры ----------
 
     private static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
         if (!(event.getEntity() instanceof ServerPlayer player)) return;
@@ -112,8 +107,6 @@ public final class DiscoveryEvents {
             }
         }
     }
-
-    // ---------- команды для тестов ----------
 
     private static void onRegisterCommands(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("tooltiprevamp")
