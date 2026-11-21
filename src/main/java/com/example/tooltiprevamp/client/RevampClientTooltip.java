@@ -20,10 +20,13 @@ public class RevampClientTooltip implements ClientTooltipComponent {
     public static final int COLOR_BLACK = 0xFF000000;
     public static final int COLOR_BORDER = 0xFF3F3F3F;
 
-    private static final int COLOR_TEXT = 0xFFAAAAAA;
+    private static final int COLOR_TITLE = 0xFFFFFFFF;
+    private static final int COLOR_DESC = 0xFFC8C8C8;
+    private static final int COLOR_BODY = 0xFFC8C8C8;
+    private static final int COLOR_TEXT = 0xFF7A7A7A;
     private static final int COLOR_HIGHLIGHT = 0xFF5555FF;
-    private static final int COLOR_BAR = 0xFF555555;
-    private static final int COLOR_BULLET = 0xFF777777;
+    private static final int COLOR_BAR = 0xFF4A4A4A;
+    private static final int COLOR_BULLET = 0xFF5A5A5A;
     private static final int COLOR_DASH_ON = 0xFFFFFFFF;
     private static final int COLOR_DASH_OFF = 0xFF666666;
 
