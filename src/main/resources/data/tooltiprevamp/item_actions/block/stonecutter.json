@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:stonecutter"
+  ],
+  "text": "tooltiprevamp.action.block.stonecutter",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:stonecutter"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:armadillo_scute"
+  ],
+  "text": "tooltiprevamp.action.armadillo_scute.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:wolf_armor"
+    ],
+    "ingredient": true
+  }
+}

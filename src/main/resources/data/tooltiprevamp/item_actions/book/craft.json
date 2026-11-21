@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:book"
+  ],
+  "text": "tooltiprevamp.action.book.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:bookshelf",
+      "minecraft:writable_book"
+    ],
+    "ingredient": true
+  }
+}

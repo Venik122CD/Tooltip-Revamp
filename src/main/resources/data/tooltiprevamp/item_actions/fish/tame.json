@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:cod",
+    "minecraft:salmon"
+  ],
+  "text": "tooltiprevamp.action.fish.tame",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:cat",
+      "minecraft:ocelot"
+    ]
+  }
+}

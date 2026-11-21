@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:mace"
+  ],
+  "text": "tooltiprevamp.action.mace.smash",
+  "order": 10,
+  "trigger": {
+    "type": "attack"
+  }
+}

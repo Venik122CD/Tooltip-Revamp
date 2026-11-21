@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:golden_carrot"
+  ],
+  "text": "tooltiprevamp.action.golden_carrot.horse",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:horse",
+      "minecraft:donkey",
+      "minecraft:mule"
+    ]
+  }
+}

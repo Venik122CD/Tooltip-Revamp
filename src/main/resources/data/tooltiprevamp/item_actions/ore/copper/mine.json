@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:copper_ore",
+    "minecraft:deepslate_copper_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.copper.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:copper_ore",
+      "minecraft:deepslate_copper_ore"
+    ],
+    "any_tool": true
+  }
+}

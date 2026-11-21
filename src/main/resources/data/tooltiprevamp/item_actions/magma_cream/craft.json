@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:magma_cream"
+  ],
+  "text": "tooltiprevamp.action.magma_cream.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:magma_block"
+    ],
+    "ingredient": true
+  }
+}

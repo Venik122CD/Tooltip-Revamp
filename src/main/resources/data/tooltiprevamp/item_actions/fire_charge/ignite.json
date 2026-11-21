@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:fire_charge"
+  ],
+  "text": "tooltiprevamp.action.fire_charge.ignite",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:tnt",
+      "minecraft:campfire",
+      "minecraft:soul_campfire",
+      "minecraft:obsidian"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:hopper"
+  ],
+  "text": "tooltiprevamp.action.block.hopper",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:hopper"
+    ]
+  }
+}

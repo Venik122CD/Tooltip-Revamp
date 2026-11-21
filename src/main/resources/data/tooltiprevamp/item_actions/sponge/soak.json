@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:sponge"
+  ],
+  "text": "tooltiprevamp.action.sponge.soak",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:sponge"
+    ]
+  }
+}

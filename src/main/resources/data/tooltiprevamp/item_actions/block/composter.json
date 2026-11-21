@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:composter"
+  ],
+  "text": "tooltiprevamp.action.block.composter",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:composter"
+    ]
+  }
+}

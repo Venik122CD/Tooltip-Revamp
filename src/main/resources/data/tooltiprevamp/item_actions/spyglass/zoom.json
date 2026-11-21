@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:spyglass"
+  ],
+  "text": "tooltiprevamp.action.spyglass.zoom",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:nether_wart"
+  ],
+  "text": "tooltiprevamp.action.wart.brew",
+  "order": 11,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:awkward"
+    ]
+  }
+}

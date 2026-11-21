@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:ender_eye"
+  ],
+  "text": "tooltiprevamp.action.ender_eye.frame",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:end_portal_frame"
+    ]
+  }
+}

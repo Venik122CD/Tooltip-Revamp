@@ -1,0 +1,17 @@
+{
+  "items": [
+    "minecraft:wheat"
+  ],
+  "text": "tooltiprevamp.action.wheat.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:bread",
+      "minecraft:cookie",
+      "minecraft:cake",
+      "minecraft:hay_block"
+    ],
+    "ingredient": true
+  }
+}

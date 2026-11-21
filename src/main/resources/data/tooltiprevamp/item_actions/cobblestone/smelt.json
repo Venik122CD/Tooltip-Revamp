@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:cobblestone"
+  ],
+  "text": "tooltiprevamp.action.cobblestone.smelt",
+  "order": 11,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:stone"
+    ]
+  }
+}

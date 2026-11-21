@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:shears"
+  ],
+  "text": "tooltiprevamp.action.shears.sheep",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:sheep"
+    ]
+  }
+}

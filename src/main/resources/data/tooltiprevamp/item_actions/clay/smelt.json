@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:clay_ball"
+  ],
+  "text": "tooltiprevamp.action.clay.smelt",
+  "order": 10,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:brick"
+    ]
+  }
+}

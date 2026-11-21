@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:blaze_powder"
+  ],
+  "text": "tooltiprevamp.action.blaze_powder.strength",
+  "order": 11,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:strength",
+      "minecraft:long_strength",
+      "minecraft:strong_strength"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:flint_and_steel"
+  ],
+  "text": "tooltiprevamp.action.flint_and_steel.ignite",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:tnt",
+      "minecraft:campfire",
+      "minecraft:soul_campfire",
+      "minecraft:obsidian"
+    ]
+  }
+}

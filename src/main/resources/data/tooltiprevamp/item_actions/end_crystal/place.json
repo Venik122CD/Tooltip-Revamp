@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:end_crystal"
+  ],
+  "text": "tooltiprevamp.action.end_crystal.place",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:obsidian",
+      "minecraft:bedrock"
+    ]
+  }
+}

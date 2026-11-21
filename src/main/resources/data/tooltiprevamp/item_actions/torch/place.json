@@ -1,0 +1,17 @@
+{
+  "items": [
+    "minecraft:torch",
+    "minecraft:soul_torch"
+  ],
+  "text": "tooltiprevamp.action.torch.place",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:torch",
+      "minecraft:wall_torch",
+      "minecraft:soul_torch",
+      "minecraft:soul_wall_torch"
+    ]
+  }
+}

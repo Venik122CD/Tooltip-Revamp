@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:ender_eye"
+  ],
+  "text": "tooltiprevamp.action.ender_eye.stronghold",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

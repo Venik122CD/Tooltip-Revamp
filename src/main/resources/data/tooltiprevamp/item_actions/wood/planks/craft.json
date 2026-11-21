@@ -1,0 +1,18 @@
+{
+  "items": [
+    "#minecraft:planks"
+  ],
+  "text": "tooltiprevamp.action.wood.planks.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:stick",
+      "minecraft:chest",
+      "minecraft:crafting_table",
+      "minecraft:barrel",
+      "minecraft:composter"
+    ],
+    "ingredient": true
+  }
+}

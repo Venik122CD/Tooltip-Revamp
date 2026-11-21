@@ -1,0 +1,21 @@
+{
+  "items": [
+    "minecraft:glowstone_dust"
+  ],
+  "text": "tooltiprevamp.action.glowstone_dust.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:strong_healing",
+      "minecraft:strong_harming",
+      "minecraft:strong_leaping",
+      "minecraft:strong_poison",
+      "minecraft:strong_regeneration",
+      "minecraft:strong_slowness",
+      "minecraft:strong_strength",
+      "minecraft:strong_swiftness",
+      "minecraft:strong_turtle_master"
+    ]
+  }
+}

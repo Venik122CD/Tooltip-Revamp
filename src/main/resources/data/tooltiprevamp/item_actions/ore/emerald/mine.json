@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:emerald_ore",
+    "minecraft:deepslate_emerald_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.emerald.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:emerald_ore",
+      "minecraft:deepslate_emerald_ore"
+    ],
+    "any_tool": true
+  }
+}

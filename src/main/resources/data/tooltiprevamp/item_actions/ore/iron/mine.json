@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:iron_ore",
+    "minecraft:deepslate_iron_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.iron.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:iron_ore",
+      "minecraft:deepslate_iron_ore"
+    ],
+    "any_tool": true
+  }
+}

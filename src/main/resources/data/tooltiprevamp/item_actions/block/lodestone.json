@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:lodestone"
+  ],
+  "text": "tooltiprevamp.action.block.lodestone",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:lodestone"
+    ]
+  }
+}

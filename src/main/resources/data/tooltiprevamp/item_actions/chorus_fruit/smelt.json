@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:chorus_fruit"
+  ],
+  "text": "tooltiprevamp.action.chorus_fruit.smelt",
+  "order": 11,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:popped_chorus_fruit"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:brewing_stand"
+  ],
+  "text": "tooltiprevamp.action.block.brewing_stand",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:brewing_stand"
+    ]
+  }
+}

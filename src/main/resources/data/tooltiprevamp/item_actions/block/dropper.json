@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:dropper"
+  ],
+  "text": "tooltiprevamp.action.block.dropper",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:dropper"
+    ]
+  }
+}

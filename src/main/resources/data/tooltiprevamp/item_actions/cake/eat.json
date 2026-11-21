@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:cake"
+  ],
+  "text": "tooltiprevamp.action.cake.eat",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:cake"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:rabbit_foot"
+  ],
+  "text": "tooltiprevamp.action.rabbit_foot.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:leaping",
+      "minecraft:long_leaping",
+      "minecraft:strong_leaping"
+    ]
+  }
+}

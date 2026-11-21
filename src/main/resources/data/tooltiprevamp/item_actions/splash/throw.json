@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:splash_potion"
+  ],
+  "text": "tooltiprevamp.action.splash.throw",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

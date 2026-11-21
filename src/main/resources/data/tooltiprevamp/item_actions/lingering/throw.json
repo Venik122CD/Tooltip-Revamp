@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:lingering_potion"
+  ],
+  "text": "tooltiprevamp.action.lingering.throw",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

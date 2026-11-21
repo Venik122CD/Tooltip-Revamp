@@ -1,0 +1,20 @@
+{
+  "items": [
+    "minecraft:cobblestone"
+  ],
+  "text": "tooltiprevamp.action.cobblestone.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:furnace",
+      "minecraft:stone_pickaxe",
+      "minecraft:stone_axe",
+      "minecraft:stone_shovel",
+      "minecraft:stone_hoe",
+      "minecraft:stone_sword",
+      "minecraft:stone_brick_stairs"
+    ],
+    "ingredient": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:blaze_powder"
+  ],
+  "text": "tooltiprevamp.action.blaze_powder.fuel",
+  "order": 10,
+  "trigger": {
+    "type": "brew"
+  }
+}

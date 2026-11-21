@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:shield"
+  ],
+  "text": "tooltiprevamp.action.shield.block",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

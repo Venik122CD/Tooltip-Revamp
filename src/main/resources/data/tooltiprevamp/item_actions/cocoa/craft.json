@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:cocoa_beans"
+  ],
+  "text": "tooltiprevamp.action.cocoa.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:cookie"
+    ],
+    "ingredient": true
+  }
+}

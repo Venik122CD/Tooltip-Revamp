@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:sticky_piston"
+  ],
+  "text": "tooltiprevamp.action.redstone.sticky_piston",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:sticky_piston"
+    ]
+  }
+}

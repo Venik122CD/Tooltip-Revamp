@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:spider_eye"
+  ],
+  "text": "tooltiprevamp.action.spider_eye.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

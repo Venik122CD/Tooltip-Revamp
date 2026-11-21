@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:golden_carrot"
+  ],
+  "text": "tooltiprevamp.action.golden_carrot.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:night_vision",
+      "minecraft:long_night_vision"
+    ]
+  }
+}

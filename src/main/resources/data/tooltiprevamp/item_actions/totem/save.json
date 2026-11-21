@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:totem_of_undying"
+  ],
+  "text": "tooltiprevamp.action.totem.save",
+  "order": 10,
+  "trigger": {
+    "type": "equipped",
+    "slot": "hands"
+  }
+}

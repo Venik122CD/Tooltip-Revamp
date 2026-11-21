@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:ancient_debris"
+  ],
+  "text": "tooltiprevamp.action.debris.smelt",
+  "order": 11,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:netherite_scrap"
+    ]
+  }
+}

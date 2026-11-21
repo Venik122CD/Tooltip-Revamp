@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:nether_wart"
+  ],
+  "text": "tooltiprevamp.action.wart.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:nether_wart"
+    ]
+  }
+}

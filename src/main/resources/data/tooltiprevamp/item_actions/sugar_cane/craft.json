@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:sugar_cane"
+  ],
+  "text": "tooltiprevamp.action.sugar_cane.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:paper",
+      "minecraft:sugar"
+    ],
+    "ingredient": true
+  }
+}

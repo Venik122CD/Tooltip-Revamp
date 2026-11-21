@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:bone"
+  ],
+  "text": "tooltiprevamp.action.bone.tame",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:wolf"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:leather_horse_armor",
+    "minecraft:iron_horse_armor",
+    "minecraft:golden_horse_armor",
+    "minecraft:diamond_horse_armor"
+  ],
+  "text": "tooltiprevamp.action.horse_armor.equip",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:horse"
+    ]
+  }
+}

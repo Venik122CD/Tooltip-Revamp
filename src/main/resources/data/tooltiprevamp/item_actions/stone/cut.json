@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:stone"
+  ],
+  "text": "tooltiprevamp.action.stone.cut",
+  "order": 11,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:stonecutter"
+    ],
+    "held": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:shears"
+  ],
+  "text": "tooltiprevamp.action.shears.pumpkin",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:pumpkin"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:crossbow"
+  ],
+  "text": "tooltiprevamp.action.crossbow.shoot",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

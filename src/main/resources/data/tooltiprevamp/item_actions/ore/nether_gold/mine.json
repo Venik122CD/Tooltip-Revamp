@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:nether_gold_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.nether_gold.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:nether_gold_ore"
+    ],
+    "any_tool": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:bamboo"
+  ],
+  "text": "tooltiprevamp.action.bamboo.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:bamboo_sapling",
+      "minecraft:bamboo"
+    ]
+  }
+}

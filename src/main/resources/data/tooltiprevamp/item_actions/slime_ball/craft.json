@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:slime_ball"
+  ],
+  "text": "tooltiprevamp.action.slime_ball.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:sticky_piston",
+      "minecraft:lead",
+      "minecraft:slime_block"
+    ],
+    "ingredient": true
+  }
+}

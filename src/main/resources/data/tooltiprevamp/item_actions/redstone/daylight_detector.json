@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:daylight_detector"
+  ],
+  "text": "tooltiprevamp.action.redstone.daylight_detector",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:daylight_detector"
+    ]
+  }
+}

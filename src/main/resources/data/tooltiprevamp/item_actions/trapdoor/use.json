@@ -1,0 +1,23 @@
+{
+  "items": [
+    "minecraft:oak_trapdoor",
+    "minecraft:spruce_trapdoor",
+    "minecraft:birch_trapdoor",
+    "minecraft:jungle_trapdoor",
+    "minecraft:acacia_trapdoor",
+    "minecraft:dark_oak_trapdoor",
+    "minecraft:mangrove_trapdoor",
+    "minecraft:cherry_trapdoor",
+    "minecraft:bamboo_trapdoor",
+    "minecraft:crimson_trapdoor",
+    "minecraft:warped_trapdoor"
+  ],
+  "text": "tooltiprevamp.action.trapdoor.use",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "#minecraft:wooden_trapdoors"
+    ]
+  }
+}

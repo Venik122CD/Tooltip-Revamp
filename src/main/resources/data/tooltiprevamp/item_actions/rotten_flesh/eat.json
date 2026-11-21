@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:rotten_flesh"
+  ],
+  "text": "tooltiprevamp.action.rotten_flesh.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

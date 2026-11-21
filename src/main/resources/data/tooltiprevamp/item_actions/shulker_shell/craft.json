@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:shulker_shell"
+  ],
+  "text": "tooltiprevamp.action.shulker_shell.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:shulker_box"
+    ],
+    "ingredient": true
+  }
+}

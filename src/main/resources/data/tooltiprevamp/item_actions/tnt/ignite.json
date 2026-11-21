@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:tnt"
+  ],
+  "text": "tooltiprevamp.action.tnt.ignite",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:tnt"
+    ]
+  }
+}

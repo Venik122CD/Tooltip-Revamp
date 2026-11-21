@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:piston"
+  ],
+  "text": "tooltiprevamp.action.redstone.piston",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:piston"
+    ]
+  }
+}

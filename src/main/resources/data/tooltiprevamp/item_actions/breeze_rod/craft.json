@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:breeze_rod"
+  ],
+  "text": "tooltiprevamp.action.breeze_rod.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:wind_charge"
+    ],
+    "ingredient": true
+  }
+}

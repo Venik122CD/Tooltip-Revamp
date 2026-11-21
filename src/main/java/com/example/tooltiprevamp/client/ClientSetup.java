@@ -12,7 +12,6 @@ public final class ClientSetup {
 
     public static void init(IEventBus modBus, IEventBus gameBus) {
         modBus.addListener(ClientSetup::registerTooltipFactories);
-
         gameBus.addListener(EventPriority.LOW, TooltipEvents::onGather);
         gameBus.addListener(TooltipEvents::onColor);
         gameBus.addListener(ClientSetup::onLogout);

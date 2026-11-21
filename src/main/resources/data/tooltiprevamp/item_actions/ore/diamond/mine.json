@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:diamond_ore",
+    "minecraft:deepslate_diamond_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.diamond.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:diamond_ore",
+      "minecraft:deepslate_diamond_ore"
+    ],
+    "any_tool": true
+  }
+}

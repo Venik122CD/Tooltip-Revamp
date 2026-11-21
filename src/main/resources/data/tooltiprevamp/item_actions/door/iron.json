@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:iron_door"
+  ],
+  "text": "tooltiprevamp.action.door.iron",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:iron_door"
+    ]
+  }
+}

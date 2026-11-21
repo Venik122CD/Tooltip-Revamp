@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:ominous_trial_key"
+  ],
+  "text": "tooltiprevamp.action.ominous_key.vault",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:vault"
+    ]
+  }
+}

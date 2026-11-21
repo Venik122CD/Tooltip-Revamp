@@ -1,0 +1,17 @@
+{
+  "items": [
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil"
+  ],
+  "text": "tooltiprevamp.action.block.anvil",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:anvil",
+      "minecraft:chipped_anvil",
+      "minecraft:damaged_anvil"
+    ]
+  }
+}

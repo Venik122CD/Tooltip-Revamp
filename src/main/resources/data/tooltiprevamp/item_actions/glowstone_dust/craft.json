@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:glowstone_dust"
+  ],
+  "text": "tooltiprevamp.action.glowstone_dust.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:glowstone"
+    ],
+    "ingredient": true
+  }
+}

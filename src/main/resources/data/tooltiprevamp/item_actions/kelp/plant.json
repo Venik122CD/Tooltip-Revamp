@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:kelp"
+  ],
+  "text": "tooltiprevamp.action.kelp.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:kelp",
+      "minecraft:kelp_plant"
+    ]
+  }
+}

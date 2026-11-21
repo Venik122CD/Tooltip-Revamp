@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:sugar_cane"
+  ],
+  "text": "tooltiprevamp.action.sugar_cane.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:sugar_cane"
+    ]
+  }
+}

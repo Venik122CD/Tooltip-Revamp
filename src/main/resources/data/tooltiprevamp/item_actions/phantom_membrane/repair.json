@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:phantom_membrane"
+  ],
+  "text": "tooltiprevamp.action.phantom_membrane.repair",
+  "order": 11,
+  "trigger": {
+    "type": "anvil",
+    "side": "right"
+  }
+}

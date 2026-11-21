@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:beetroot"
+  ],
+  "text": "tooltiprevamp.action.root.pig",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:pig"
+    ]
+  }
+}

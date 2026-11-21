@@ -1,0 +1,18 @@
+{
+  "items": [
+    "minecraft:string"
+  ],
+  "text": "tooltiprevamp.action.string.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:bow",
+      "minecraft:fishing_rod",
+      "minecraft:crossbow",
+      "minecraft:lead",
+      "#minecraft:wool"
+    ],
+    "ingredient": true
+  }
+}

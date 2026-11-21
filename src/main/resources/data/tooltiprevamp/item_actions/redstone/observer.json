@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:observer"
+  ],
+  "text": "tooltiprevamp.action.redstone.observer",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:observer"
+    ]
+  }
+}

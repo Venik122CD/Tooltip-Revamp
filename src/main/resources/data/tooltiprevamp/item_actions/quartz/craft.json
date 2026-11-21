@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:quartz"
+  ],
+  "text": "tooltiprevamp.action.quartz.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:comparator",
+      "minecraft:observer",
+      "minecraft:daylight_detector"
+    ],
+    "ingredient": true
+  }
+}

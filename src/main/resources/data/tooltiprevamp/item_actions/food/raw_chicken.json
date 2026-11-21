@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:chicken"
+  ],
+  "text": "tooltiprevamp.action.food.raw_chicken",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

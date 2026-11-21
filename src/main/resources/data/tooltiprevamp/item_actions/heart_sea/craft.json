@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:heart_of_the_sea"
+  ],
+  "text": "tooltiprevamp.action.heart_sea.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:conduit"
+    ],
+    "ingredient": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:warped_fungus_on_a_stick"
+  ],
+  "text": "tooltiprevamp.action.fungus_stick.steer",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

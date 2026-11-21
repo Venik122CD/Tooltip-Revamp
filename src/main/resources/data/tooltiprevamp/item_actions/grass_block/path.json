@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:grass_block"
+  ],
+  "text": "tooltiprevamp.action.grass_block.path",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:grass_block"
+    ],
+    "ability": "shovel_flatten"
+  }
+}

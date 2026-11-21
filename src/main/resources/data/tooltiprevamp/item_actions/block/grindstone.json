@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:grindstone"
+  ],
+  "text": "tooltiprevamp.action.block.grindstone",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:grindstone"
+    ]
+  }
+}

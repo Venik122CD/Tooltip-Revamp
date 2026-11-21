@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:shears"
+  ],
+  "text": "tooltiprevamp.action.shears.leaves",
+  "order": 13,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "#minecraft:leaves",
+      "#minecraft:wool",
+      "minecraft:cobweb"
+    ]
+  }
+}

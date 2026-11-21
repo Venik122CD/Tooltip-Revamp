@@ -11,6 +11,7 @@ import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.PotionContents;
 
+
 public record ItemMatcher(boolean tag, ResourceLocation id, ResourceLocation potion) {
 
     public static ItemMatcher parse(JsonElement element) {

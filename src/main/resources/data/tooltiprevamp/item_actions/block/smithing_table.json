@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:smithing_table"
+  ],
+  "text": "tooltiprevamp.action.block.smithing_table",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:smithing_table"
+    ]
+  }
+}

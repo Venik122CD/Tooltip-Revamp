@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:wolf_armor"
+  ],
+  "text": "tooltiprevamp.action.wolf_armor.equip",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:wolf"
+    ]
+  }
+}

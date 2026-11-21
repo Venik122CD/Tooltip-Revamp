@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:blaze_rod"
+  ],
+  "text": "tooltiprevamp.action.blaze_rod.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:blaze_powder",
+      "minecraft:end_rod"
+    ],
+    "ingredient": true
+  }
+}

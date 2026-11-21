@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:fletching_table"
+  ],
+  "text": "tooltiprevamp.action.block.fletching_table",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:fletching_table"
+    ]
+  }
+}

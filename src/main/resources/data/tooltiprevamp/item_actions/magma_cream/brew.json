@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:magma_cream"
+  ],
+  "text": "tooltiprevamp.action.magma_cream.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:fire_resistance",
+      "minecraft:long_fire_resistance"
+    ]
+  }
+}

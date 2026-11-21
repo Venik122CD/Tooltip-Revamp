@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:nautilus_shell"
+  ],
+  "text": "tooltiprevamp.action.nautilus.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:conduit"
+    ],
+    "ingredient": true
+  }
+}

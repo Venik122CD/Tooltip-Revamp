@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:cactus"
+  ],
+  "text": "tooltiprevamp.action.cactus.smelt",
+  "order": 10,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:green_dye"
+    ]
+  }
+}

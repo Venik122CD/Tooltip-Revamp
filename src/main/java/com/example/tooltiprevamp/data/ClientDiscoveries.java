@@ -5,6 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.Collection;
 import java.util.Set;
 
+
 public final class ClientDiscoveries {
     private static volatile Set<ResourceLocation> discovered = Set.of();
 

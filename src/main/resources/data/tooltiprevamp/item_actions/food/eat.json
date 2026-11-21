@@ -1,0 +1,39 @@
+{
+  "items": [
+    "minecraft:apple",
+    "minecraft:baked_potato",
+    "minecraft:beetroot",
+    "minecraft:beetroot_soup",
+    "minecraft:bread",
+    "minecraft:carrot",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_cod",
+    "minecraft:cooked_mutton",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_salmon",
+    "minecraft:cookie",
+    "minecraft:dried_kelp",
+    "minecraft:glow_berries",
+    "minecraft:melon_slice",
+    "minecraft:mushroom_stew",
+    "minecraft:pumpkin_pie",
+    "minecraft:rabbit_stew",
+    "minecraft:sweet_berries",
+    "minecraft:potato",
+    "minecraft:beef",
+    "minecraft:porkchop",
+    "minecraft:chicken",
+    "minecraft:mutton",
+    "minecraft:rabbit",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish"
+  ],
+  "text": "tooltiprevamp.action.food.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

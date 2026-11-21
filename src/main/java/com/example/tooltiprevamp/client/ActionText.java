@@ -5,6 +5,7 @@ import net.minecraft.locale.Language;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public final class ActionText {
     private ActionText() {}
 

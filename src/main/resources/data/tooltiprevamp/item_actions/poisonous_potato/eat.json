@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:poisonous_potato"
+  ],
+  "text": "tooltiprevamp.action.poisonous_potato.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

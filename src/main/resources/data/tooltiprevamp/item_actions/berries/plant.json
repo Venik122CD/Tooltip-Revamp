@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:sweet_berries"
+  ],
+  "text": "tooltiprevamp.action.berries.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:sweet_berry_bush"
+    ]
+  }
+}

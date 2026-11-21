@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:note_block"
+  ],
+  "text": "tooltiprevamp.action.block.note_block",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:note_block"
+    ]
+  }
+}

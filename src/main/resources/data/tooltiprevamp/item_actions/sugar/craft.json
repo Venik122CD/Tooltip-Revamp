@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:sugar"
+  ],
+  "text": "tooltiprevamp.action.sugar.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:cake",
+      "minecraft:pumpkin_pie"
+    ],
+    "ingredient": true
+  }
+}

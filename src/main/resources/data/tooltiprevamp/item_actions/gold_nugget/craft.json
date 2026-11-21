@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:gold_nugget"
+  ],
+  "text": "tooltiprevamp.action.gold_nugget.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:gold_ingot",
+      "minecraft:golden_carrot",
+      "minecraft:glistering_melon_slice"
+    ],
+    "ingredient": true
+  }
+}

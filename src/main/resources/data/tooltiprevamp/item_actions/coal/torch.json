@@ -1,0 +1,17 @@
+{
+  "items": [
+    "minecraft:coal",
+    "minecraft:charcoal"
+  ],
+  "text": "tooltiprevamp.action.coal.torch",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:torch",
+      "minecraft:soul_torch",
+      "minecraft:coal_block"
+    ],
+    "ingredient": true
+  }
+}

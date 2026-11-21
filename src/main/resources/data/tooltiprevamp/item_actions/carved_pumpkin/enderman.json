@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:carved_pumpkin"
+  ],
+  "text": "tooltiprevamp.action.carved_pumpkin.enderman",
+  "order": 10,
+  "trigger": {
+    "type": "equipped",
+    "slot": "head",
+    "entities": [
+      "minecraft:enderman"
+    ],
+    "radius": 16
+  }
+}

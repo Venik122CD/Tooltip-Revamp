@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:armadillo_scute"
+  ],
+  "text": "tooltiprevamp.action.armadillo_scute.repair",
+  "order": 11,
+  "trigger": {
+    "type": "anvil",
+    "side": "right"
+  }
+}

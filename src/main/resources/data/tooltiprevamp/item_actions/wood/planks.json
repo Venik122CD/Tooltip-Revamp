@@ -1,0 +1,14 @@
+{
+  "items": [
+    "#minecraft:logs"
+  ],
+  "text": "tooltiprevamp.action.wood.planks",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "#minecraft:planks"
+    ],
+    "ingredient": true
+  }
+}

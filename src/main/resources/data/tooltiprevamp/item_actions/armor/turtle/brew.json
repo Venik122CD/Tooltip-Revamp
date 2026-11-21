@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:turtle_helmet"
+  ],
+  "text": "tooltiprevamp.action.armor.turtle.brew",
+  "order": 11,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:turtle_master",
+      "minecraft:long_turtle_master",
+      "minecraft:strong_turtle_master"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:blast_furnace"
+  ],
+  "text": "tooltiprevamp.action.job.blast_furnace",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:blast_furnace"
+    ]
+  }
+}

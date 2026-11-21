@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:lectern"
+  ],
+  "text": "tooltiprevamp.action.job.lectern",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:lectern"
+    ]
+  }
+}

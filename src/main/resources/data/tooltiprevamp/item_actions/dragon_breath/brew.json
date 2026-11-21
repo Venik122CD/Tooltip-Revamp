@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:dragon_breath"
+  ],
+  "text": "tooltiprevamp.action.dragon_breath.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "results": [
+      "minecraft:lingering_potion"
+    ]
+  }
+}

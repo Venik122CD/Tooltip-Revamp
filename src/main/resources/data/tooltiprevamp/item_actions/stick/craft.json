@@ -1,0 +1,20 @@
+{
+  "items": [
+    "minecraft:stick"
+  ],
+  "text": "tooltiprevamp.action.stick.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "#minecraft:pickaxes",
+      "#minecraft:axes",
+      "#minecraft:shovels",
+      "#minecraft:hoes",
+      "#minecraft:swords",
+      "minecraft:torch",
+      "minecraft:ladder"
+    ],
+    "ingredient": true
+  }
+}

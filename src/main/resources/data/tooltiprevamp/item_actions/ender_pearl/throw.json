@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:ender_pearl"
+  ],
+  "text": "tooltiprevamp.action.ender_pearl.throw",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

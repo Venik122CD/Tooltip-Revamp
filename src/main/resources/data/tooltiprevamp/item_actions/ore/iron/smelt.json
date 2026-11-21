@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:raw_iron",
+    "minecraft:iron_ore",
+    "minecraft:deepslate_iron_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.iron.smelt",
+  "order": 10,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:iron_ingot"
+    ]
+  }
+}

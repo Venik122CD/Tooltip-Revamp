@@ -1,0 +1,17 @@
+{
+  "items": [
+    "minecraft:coal",
+    "minecraft:charcoal"
+  ],
+  "text": "tooltiprevamp.action.coal.fuel",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:furnace",
+      "minecraft:blast_furnace",
+      "minecraft:smoker"
+    ],
+    "held": true
+  }
+}

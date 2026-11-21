@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:flint"
+  ],
+  "text": "tooltiprevamp.action.flint.gravel",
+  "order": 11,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:gravel"
+    ],
+    "any_tool": true
+  }
+}

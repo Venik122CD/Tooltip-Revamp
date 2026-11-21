@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:fishing_rod"
+  ],
+  "text": "tooltiprevamp.action.fishing_rod.cast",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

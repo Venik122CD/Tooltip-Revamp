@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:water_bucket"
+  ],
+  "text": "tooltiprevamp.action.water_bucket.place",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "items": [
+    "minecraft:redstone"
+  ],
+  "text": "tooltiprevamp.action.redstone.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:repeater",
+      "minecraft:comparator",
+      "minecraft:piston",
+      "minecraft:sticky_piston",
+      "minecraft:dispenser",
+      "minecraft:dropper",
+      "minecraft:observer",
+      "minecraft:redstone_torch",
+      "minecraft:redstone_lamp"
+    ],
+    "ingredient": true
+  }
+}

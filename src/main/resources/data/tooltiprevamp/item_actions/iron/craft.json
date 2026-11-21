@@ -1,0 +1,29 @@
+{
+  "items": [
+    "minecraft:iron_ingot"
+  ],
+  "text": "tooltiprevamp.action.iron.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "#minecraft:pickaxes",
+      "#minecraft:axes",
+      "#minecraft:swords",
+      "minecraft:iron_helmet",
+      "minecraft:iron_chestplate",
+      "minecraft:iron_leggings",
+      "minecraft:iron_boots",
+      "minecraft:rail",
+      "minecraft:bucket",
+      "minecraft:anvil",
+      "minecraft:hopper",
+      "minecraft:minecart",
+      "minecraft:shears",
+      "minecraft:iron_door",
+      "minecraft:iron_bars",
+      "minecraft:chain"
+    ],
+    "ingredient": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:redstone_ore",
+    "minecraft:deepslate_redstone_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.redstone.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:redstone_ore",
+      "minecraft:deepslate_redstone_ore"
+    ],
+    "any_tool": true
+  }
+}

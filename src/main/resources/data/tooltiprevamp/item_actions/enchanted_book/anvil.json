@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:enchanted_book"
+  ],
+  "text": "tooltiprevamp.action.enchanted_book.anvil",
+  "order": 10,
+  "trigger": {
+    "type": "anvil",
+    "side": "right"
+  }
+}

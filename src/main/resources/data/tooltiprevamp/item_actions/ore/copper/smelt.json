@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:raw_copper",
+    "minecraft:copper_ore",
+    "minecraft:deepslate_copper_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.copper.smelt",
+  "order": 10,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:copper_ingot"
+    ]
+  }
+}

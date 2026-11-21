@@ -1,0 +1,20 @@
+{
+  "items": [
+    "minecraft:minecart",
+    "minecraft:chest_minecart",
+    "minecraft:furnace_minecart",
+    "minecraft:hopper_minecart",
+    "minecraft:tnt_minecart"
+  ],
+  "text": "tooltiprevamp.action.minecart.ride",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:rail",
+      "minecraft:powered_rail",
+      "minecraft:detector_rail",
+      "minecraft:activator_rail"
+    ]
+  }
+}

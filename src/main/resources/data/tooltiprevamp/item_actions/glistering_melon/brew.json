@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:glistering_melon_slice"
+  ],
+  "text": "tooltiprevamp.action.glistering_melon.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:healing",
+      "minecraft:strong_healing"
+    ]
+  }
+}

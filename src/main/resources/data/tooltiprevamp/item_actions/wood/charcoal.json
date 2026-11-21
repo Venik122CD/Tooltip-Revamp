@@ -1,0 +1,13 @@
+{
+  "items": [
+    "#minecraft:logs_that_burn"
+  ],
+  "text": "tooltiprevamp.action.wood.charcoal",
+  "order": 10,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:charcoal"
+    ]
+  }
+}

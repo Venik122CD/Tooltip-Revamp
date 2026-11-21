@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:beehive"
+  ],
+  "text": "tooltiprevamp.action.beehive.place",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:beehive"
+    ]
+  }
+}

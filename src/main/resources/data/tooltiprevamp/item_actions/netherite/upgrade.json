@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:netherite_ingot"
+  ],
+  "text": "tooltiprevamp.action.netherite.upgrade",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:smithing_table"
+    ],
+    "held": true
+  }
+}

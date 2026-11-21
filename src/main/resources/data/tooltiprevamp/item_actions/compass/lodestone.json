@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:compass"
+  ],
+  "text": "tooltiprevamp.action.compass.lodestone",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:lodestone"
+    ]
+  }
+}

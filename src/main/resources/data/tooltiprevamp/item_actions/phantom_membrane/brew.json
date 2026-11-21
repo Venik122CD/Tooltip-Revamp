@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:phantom_membrane"
+  ],
+  "text": "tooltiprevamp.action.phantom_membrane.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:slow_falling",
+      "minecraft:long_slow_falling"
+    ]
+  }
+}

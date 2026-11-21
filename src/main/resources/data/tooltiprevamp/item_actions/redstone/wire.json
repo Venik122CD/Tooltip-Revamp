@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:redstone"
+  ],
+  "text": "tooltiprevamp.action.redstone.wire",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:redstone_wire"
+    ]
+  }
+}

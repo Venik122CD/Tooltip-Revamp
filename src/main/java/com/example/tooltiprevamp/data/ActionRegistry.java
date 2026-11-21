@@ -7,9 +7,11 @@ import net.minecraft.world.item.ItemStack;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 public final class ActionRegistry {
     public static final ActionRegistry SERVER = new ActionRegistry();
@@ -20,12 +22,24 @@ public final class ActionRegistry {
 
     private volatile List<ItemAction> actions = List.of();
     private volatile Map<ResourceLocation, String> rawJson = Map.of();
+    private volatile Map<Trigger.Type, List<ItemAction>> byType = Map.of();
 
     private ActionRegistry() {}
 
     public void set(Map<ResourceLocation, ItemAction> parsed, Map<ResourceLocation, String> raw) {
         actions = parsed.values().stream().sorted(ORDER).toList();
         rawJson = Map.copyOf(raw);
+
+        Map<Trigger.Type, List<ItemAction>> map = new EnumMap<>(Trigger.Type.class);
+        for (ItemAction a : actions) {
+            map.computeIfAbsent(a.trigger().type(), k -> new ArrayList<>()).add(a);
+        }
+        byType = map;
+    }
+
+
+    public List<ItemAction> byType(Trigger.Type type) {
+        return byType.getOrDefault(type, List.of());
     }
 
     public void setFromSync(Map<ResourceLocation, String> raw) {
@@ -44,6 +58,7 @@ public final class ActionRegistry {
     public void clear() {
         actions = List.of();
         rawJson = Map.of();
+        byType = Map.of();
     }
 
     public Map<ResourceLocation, String> raw() {

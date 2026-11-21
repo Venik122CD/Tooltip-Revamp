@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:furnace"
+  ],
+  "text": "tooltiprevamp.action.block.furnace",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:furnace"
+    ]
+  }
+}

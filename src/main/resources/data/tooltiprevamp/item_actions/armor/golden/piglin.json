@@ -1,0 +1,18 @@
+{
+  "items": [
+    "minecraft:golden_helmet",
+    "minecraft:golden_chestplate",
+    "minecraft:golden_leggings",
+    "minecraft:golden_boots"
+  ],
+  "text": "tooltiprevamp.action.armor.golden.piglin",
+  "order": 10,
+  "trigger": {
+    "type": "equipped",
+    "slot": "armor",
+    "entities": [
+      "minecraft:piglin"
+    ],
+    "radius": 16
+  }
+}

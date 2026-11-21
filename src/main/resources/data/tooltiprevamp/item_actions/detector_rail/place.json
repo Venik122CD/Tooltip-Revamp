@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:detector_rail"
+  ],
+  "text": "tooltiprevamp.action.detector_rail.place",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:detector_rail"
+    ]
+  }
+}

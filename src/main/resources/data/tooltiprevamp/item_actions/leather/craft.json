@@ -1,0 +1,20 @@
+{
+  "items": [
+    "minecraft:leather"
+  ],
+  "text": "tooltiprevamp.action.leather.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:leather_helmet",
+      "minecraft:leather_chestplate",
+      "minecraft:leather_leggings",
+      "minecraft:leather_boots",
+      "minecraft:book",
+      "minecraft:item_frame",
+      "minecraft:leather_horse_armor"
+    ],
+    "ingredient": true
+  }
+}

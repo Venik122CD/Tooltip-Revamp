@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:honey_bottle"
+  ],
+  "text": "tooltiprevamp.action.honey_bottle.drink",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

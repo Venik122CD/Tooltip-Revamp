@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:egg"
+  ],
+  "text": "tooltiprevamp.action.egg.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:cake",
+      "minecraft:pumpkin_pie"
+    ],
+    "ingredient": true
+  }
+}

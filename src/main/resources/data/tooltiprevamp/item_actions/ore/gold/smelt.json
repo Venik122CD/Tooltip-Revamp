@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:raw_gold",
+    "minecraft:gold_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:nether_gold_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.gold.smelt",
+  "order": 10,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:gold_ingot"
+    ]
+  }
+}

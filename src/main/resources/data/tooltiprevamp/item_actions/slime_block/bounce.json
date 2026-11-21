@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:slime_block"
+  ],
+  "text": "tooltiprevamp.action.slime_block.bounce",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:slime_block"
+    ]
+  }
+}

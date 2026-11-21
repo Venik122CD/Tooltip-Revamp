@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:activator_rail"
+  ],
+  "text": "tooltiprevamp.action.activator_rail.place",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:activator_rail"
+    ]
+  }
+}

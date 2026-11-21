@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:cauldron"
+  ],
+  "text": "tooltiprevamp.action.block.cauldron",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:cauldron",
+      "minecraft:water_cauldron",
+      "minecraft:lava_cauldron",
+      "minecraft:powder_snow_cauldron"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:suspicious_stew"
+  ],
+  "text": "tooltiprevamp.action.stew.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "#minecraft:saplings"
+  ],
+  "text": "tooltiprevamp.action.sapling.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "#minecraft:saplings"
+    ]
+  }
+}

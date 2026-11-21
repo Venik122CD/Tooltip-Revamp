@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:tripwire_hook"
+  ],
+  "text": "tooltiprevamp.action.redstone.tripwire_hook",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:tripwire_hook"
+    ]
+  }
+}

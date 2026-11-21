@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:flint"
+  ],
+  "text": "tooltiprevamp.action.flint.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:flint_and_steel",
+      "minecraft:arrow"
+    ],
+    "ingredient": true
+  }
+}

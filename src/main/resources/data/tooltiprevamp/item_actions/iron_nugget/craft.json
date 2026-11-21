@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:iron_nugget"
+  ],
+  "text": "tooltiprevamp.action.iron_nugget.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:iron_ingot",
+      "minecraft:chain"
+    ],
+    "ingredient": true
+  }
+}

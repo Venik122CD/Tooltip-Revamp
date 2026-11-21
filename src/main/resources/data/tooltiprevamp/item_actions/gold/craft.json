@@ -1,0 +1,19 @@
+{
+  "items": [
+    "minecraft:gold_ingot"
+  ],
+  "text": "tooltiprevamp.action.gold.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:golden_apple",
+      "minecraft:powered_rail",
+      "minecraft:clock",
+      "minecraft:light_weighted_pressure_plate",
+      "minecraft:golden_pickaxe",
+      "minecraft:golden_sword"
+    ],
+    "ingredient": true
+  }
+}

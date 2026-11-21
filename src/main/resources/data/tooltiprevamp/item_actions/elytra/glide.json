@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:elytra"
+  ],
+  "text": "tooltiprevamp.action.elytra.glide",
+  "order": 10,
+  "trigger": {
+    "type": "equipped",
+    "slot": "chest"
+  }
+}

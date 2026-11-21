@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:campfire",
+    "minecraft:soul_campfire"
+  ],
+  "text": "tooltiprevamp.action.block.campfire",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:campfire",
+      "minecraft:soul_campfire"
+    ]
+  }
+}

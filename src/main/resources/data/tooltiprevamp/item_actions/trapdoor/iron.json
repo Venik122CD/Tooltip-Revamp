@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:iron_trapdoor"
+  ],
+  "text": "tooltiprevamp.action.trapdoor.iron",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:iron_trapdoor"
+    ]
+  }
+}

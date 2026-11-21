@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:experience_bottle"
+  ],
+  "text": "tooltiprevamp.action.xp_bottle.throw",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

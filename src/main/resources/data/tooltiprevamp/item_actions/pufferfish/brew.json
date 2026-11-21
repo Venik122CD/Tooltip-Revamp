@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:pufferfish"
+  ],
+  "text": "tooltiprevamp.action.pufferfish.brew",
+  "order": 11,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:water_breathing",
+      "minecraft:long_water_breathing"
+    ]
+  }
+}

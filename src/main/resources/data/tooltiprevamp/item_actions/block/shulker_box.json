@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:shulker_box"
+  ],
+  "text": "tooltiprevamp.action.block.shulker_box",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "#minecraft:shulker_boxes"
+    ]
+  }
+}

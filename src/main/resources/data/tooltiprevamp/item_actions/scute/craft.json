@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:scute"
+  ],
+  "text": "tooltiprevamp.action.scute.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:turtle_helmet"
+    ],
+    "ingredient": true
+  }
+}

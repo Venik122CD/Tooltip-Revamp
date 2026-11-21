@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:shears"
+  ],
+  "text": "tooltiprevamp.action.shears.honey",
+  "order": 12,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:beehive",
+      "minecraft:bee_nest"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:loom"
+  ],
+  "text": "tooltiprevamp.action.job.loom",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:loom"
+    ]
+  }
+}

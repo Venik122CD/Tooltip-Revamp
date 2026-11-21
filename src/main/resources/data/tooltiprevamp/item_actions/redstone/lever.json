@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:lever"
+  ],
+  "text": "tooltiprevamp.action.redstone.lever",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:lever"
+    ]
+  }
+}

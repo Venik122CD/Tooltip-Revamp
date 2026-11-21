@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:carrot_on_a_stick"
+  ],
+  "text": "tooltiprevamp.action.carrot_stick.steer",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

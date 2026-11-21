@@ -1,0 +1,13 @@
+{
+  "items": [
+    "#minecraft:music_discs"
+  ],
+  "text": "tooltiprevamp.action.disc.play",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:jukebox"
+    ]
+  }
+}

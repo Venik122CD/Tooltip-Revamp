@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:obsidian"
+  ],
+  "text": "tooltiprevamp.action.obsidian.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:obsidian"
+    ],
+    "any_tool": true
+  }
+}

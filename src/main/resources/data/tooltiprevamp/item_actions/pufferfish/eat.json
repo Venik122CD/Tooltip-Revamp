@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:pufferfish"
+  ],
+  "text": "tooltiprevamp.action.pufferfish.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

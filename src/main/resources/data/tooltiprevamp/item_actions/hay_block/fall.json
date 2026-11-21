@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:hay_block"
+  ],
+  "text": "tooltiprevamp.action.hay_block.fall",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:hay_block"
+    ]
+  }
+}

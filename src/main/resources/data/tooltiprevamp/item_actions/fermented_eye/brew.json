@@ -1,0 +1,19 @@
+{
+  "items": [
+    "minecraft:fermented_spider_eye"
+  ],
+  "text": "tooltiprevamp.action.fermented_eye.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:weakness",
+      "minecraft:long_weakness",
+      "minecraft:slowness",
+      "minecraft:long_slowness",
+      "minecraft:strong_slowness",
+      "minecraft:harming",
+      "minecraft:strong_harming"
+    ]
+  }
+}

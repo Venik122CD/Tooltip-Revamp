@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:ancient_debris"
+  ],
+  "text": "tooltiprevamp.action.debris.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:ancient_debris"
+    ],
+    "any_tool": true
+  }
+}

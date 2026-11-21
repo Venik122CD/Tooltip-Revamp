@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:carrot",
+    "minecraft:potato"
+  ],
+  "text": "tooltiprevamp.action.root.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:carrots",
+      "minecraft:potatoes"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:scaffolding"
+  ],
+  "text": "tooltiprevamp.action.scaffolding.climb",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:scaffolding"
+    ]
+  }
+}

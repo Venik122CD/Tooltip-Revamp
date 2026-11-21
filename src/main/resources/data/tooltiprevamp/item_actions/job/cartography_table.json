@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:cartography_table"
+  ],
+  "text": "tooltiprevamp.action.job.cartography_table",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:cartography_table"
+    ]
+  }
+}

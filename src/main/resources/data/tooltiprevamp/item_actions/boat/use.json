@@ -1,0 +1,10 @@
+{
+  "items": [
+    "#minecraft:boats"
+  ],
+  "text": "tooltiprevamp.action.boat.use",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

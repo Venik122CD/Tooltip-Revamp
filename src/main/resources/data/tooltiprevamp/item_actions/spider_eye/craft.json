@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:spider_eye"
+  ],
+  "text": "tooltiprevamp.action.spider_eye.craft",
+  "order": 12,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:fermented_spider_eye"
+    ],
+    "ingredient": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:coal_ore",
+    "minecraft:deepslate_coal_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.coal.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:coal_ore",
+      "minecraft:deepslate_coal_ore"
+    ],
+    "any_tool": true
+  }
+}

@@ -83,7 +83,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
 
     @Override
     public int getHeight() {
-
         return layout(Minecraft.getInstance().font).height() + (data.alone() ? 2 : 0);
     }
 
@@ -248,7 +247,6 @@ public class RevampClientTooltip implements ClientTooltipComponent {
             for (int ti = 0; ti < line.size(); ti++) {
                 Tok t = line.get(ti);
                 if (t.hidden && !known) {
-
                     boolean merge = ti + 1 < line.size()
                             && line.get(ti + 1).hidden
                             && line.get(ti + 1).highlight == t.highlight;

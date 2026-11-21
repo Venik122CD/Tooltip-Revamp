@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:golden_apple"
+  ],
+  "text": "tooltiprevamp.action.golden_apple.cure",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:zombie_villager"
+    ]
+  }
+}

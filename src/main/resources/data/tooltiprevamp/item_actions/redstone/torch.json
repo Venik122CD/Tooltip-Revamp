@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:redstone_torch"
+  ],
+  "text": "tooltiprevamp.action.redstone.torch",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:redstone_torch",
+      "minecraft:redstone_wall_torch"
+    ]
+  }
+}

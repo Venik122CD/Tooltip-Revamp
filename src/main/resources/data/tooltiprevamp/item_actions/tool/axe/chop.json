@@ -1,0 +1,18 @@
+{
+  "items": [
+    "minecraft:wooden_axe",
+    "minecraft:stone_axe",
+    "minecraft:iron_axe",
+    "minecraft:golden_axe",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_axe"
+  ],
+  "text": "tooltiprevamp.action.tool.axe.chop",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "#minecraft:mineable/axe"
+    ]
+  }
+}

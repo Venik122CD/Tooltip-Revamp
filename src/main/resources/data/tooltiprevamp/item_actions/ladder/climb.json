@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:ladder"
+  ],
+  "text": "tooltiprevamp.action.ladder.climb",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:ladder"
+    ]
+  }
+}

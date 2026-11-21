@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:chorus_fruit"
+  ],
+  "text": "tooltiprevamp.action.chorus_fruit.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

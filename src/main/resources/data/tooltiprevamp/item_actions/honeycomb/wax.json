@@ -1,0 +1,17 @@
+{
+  "items": [
+    "minecraft:honeycomb"
+  ],
+  "text": "tooltiprevamp.action.honeycomb.wax",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_block",
+    "blocks": [
+      "minecraft:copper_block",
+      "minecraft:exposed_copper",
+      "minecraft:weathered_copper",
+      "minecraft:oxidized_copper",
+      "minecraft:cut_copper"
+    ]
+  }
+}

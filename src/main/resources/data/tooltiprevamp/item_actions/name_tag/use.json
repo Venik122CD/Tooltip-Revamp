@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:name_tag"
+  ],
+  "text": "tooltiprevamp.action.name_tag.use",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity"
+  }
+}

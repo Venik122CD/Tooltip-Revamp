@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:gold_ore",
+    "minecraft:deepslate_gold_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.gold.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:gold_ore",
+      "minecraft:deepslate_gold_ore"
+    ],
+    "any_tool": true
+  }
+}

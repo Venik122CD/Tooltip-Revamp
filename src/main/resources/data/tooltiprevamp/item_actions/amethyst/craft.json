@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:amethyst_shard"
+  ],
+  "text": "tooltiprevamp.action.amethyst.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:spyglass",
+      "minecraft:tinted_glass"
+    ],
+    "ingredient": true
+  }
+}

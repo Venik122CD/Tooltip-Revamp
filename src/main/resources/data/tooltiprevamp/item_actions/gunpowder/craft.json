@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:gunpowder"
+  ],
+  "text": "tooltiprevamp.action.gunpowder.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:tnt",
+      "minecraft:firework_rocket"
+    ],
+    "ingredient": true
+  }
+}

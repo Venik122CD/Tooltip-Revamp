@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:obsidian"
+  ],
+  "text": "tooltiprevamp.action.obsidian.portal",
+  "order": 11,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:obsidian"
+    ]
+  }
+}

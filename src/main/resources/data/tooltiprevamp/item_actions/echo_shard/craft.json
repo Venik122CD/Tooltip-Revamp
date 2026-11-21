@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:echo_shard"
+  ],
+  "text": "tooltiprevamp.action.echo_shard.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:recovery_compass"
+    ],
+    "ingredient": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:wheat_seeds",
+    "minecraft:melon_seeds",
+    "minecraft:pumpkin_seeds",
+    "minecraft:beetroot_seeds"
+  ],
+  "text": "tooltiprevamp.action.seeds.chicken",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:chicken"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "items": [
+    "minecraft:diamond_pickaxe",
+    "minecraft:diamond_shovel",
+    "minecraft:diamond_hoe",
+    "minecraft:diamond_sword",
+    "minecraft:diamond_axe",
+    "minecraft:diamond_helmet",
+    "minecraft:diamond_chestplate",
+    "minecraft:diamond_leggings",
+    "minecraft:diamond_boots"
+  ],
+  "text": "tooltiprevamp.action.gear.upgrade",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:smithing_table"
+    ],
+    "held": true
+  }
+}

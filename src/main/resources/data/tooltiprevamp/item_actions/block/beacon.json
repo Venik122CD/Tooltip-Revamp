@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:beacon"
+  ],
+  "text": "tooltiprevamp.action.block.beacon",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:beacon"
+    ]
+  }
+}

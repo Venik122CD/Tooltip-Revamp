@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:cocoa_beans"
+  ],
+  "text": "tooltiprevamp.action.cocoa.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:cocoa"
+    ]
+  }
+}

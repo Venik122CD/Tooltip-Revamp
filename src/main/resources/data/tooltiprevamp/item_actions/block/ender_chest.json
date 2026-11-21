@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:ender_chest"
+  ],
+  "text": "tooltiprevamp.action.block.ender_chest",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:ender_chest"
+    ]
+  }
+}

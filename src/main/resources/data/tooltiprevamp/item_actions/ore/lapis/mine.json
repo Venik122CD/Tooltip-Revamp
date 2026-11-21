@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:lapis_ore",
+    "minecraft:deepslate_lapis_ore"
+  ],
+  "text": "tooltiprevamp.action.ore.lapis.mine",
+  "order": 10,
+  "trigger": {
+    "type": "break_block",
+    "blocks": [
+      "minecraft:lapis_ore",
+      "minecraft:deepslate_lapis_ore"
+    ],
+    "any_tool": true
+  }
+}

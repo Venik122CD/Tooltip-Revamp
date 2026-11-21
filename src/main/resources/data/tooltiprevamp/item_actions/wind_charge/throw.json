@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:wind_charge"
+  ],
+  "text": "tooltiprevamp.action.wind_charge.throw",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:emerald"
+  ],
+  "text": "tooltiprevamp.action.emerald.trade",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:villager",
+      "minecraft:wandering_trader"
+    ]
+  }
+}

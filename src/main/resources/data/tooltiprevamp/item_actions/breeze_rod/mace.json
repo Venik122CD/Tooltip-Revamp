@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:breeze_rod"
+  ],
+  "text": "tooltiprevamp.action.breeze_rod.mace",
+  "order": 11,
+  "trigger": {
+    "type": "anvil",
+    "side": "right"
+  }
+}

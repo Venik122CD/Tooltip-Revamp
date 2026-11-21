@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:blaze_powder"
+  ],
+  "text": "tooltiprevamp.action.blaze_powder.craft",
+  "order": 12,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:magma_cream",
+      "minecraft:ender_eye"
+    ],
+    "ingredient": true
+  }
+}

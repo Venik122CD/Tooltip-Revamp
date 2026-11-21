@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:sweet_berries"
+  ],
+  "text": "tooltiprevamp.action.berries.fox",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:fox"
+    ]
+  }
+}

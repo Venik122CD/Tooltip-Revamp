@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:lightning_rod"
+  ],
+  "text": "tooltiprevamp.action.lightning_rod.place",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:lightning_rod"
+    ]
+  }
+}

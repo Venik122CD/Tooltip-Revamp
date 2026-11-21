@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:stone"
+  ],
+  "text": "tooltiprevamp.action.stone.smelt",
+  "order": 10,
+  "trigger": {
+    "type": "smelt",
+    "results": [
+      "minecraft:smooth_stone"
+    ]
+  }
+}

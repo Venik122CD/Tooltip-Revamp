@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:golden_apple"
+  ],
+  "text": "tooltiprevamp.action.golden_apple.eat",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

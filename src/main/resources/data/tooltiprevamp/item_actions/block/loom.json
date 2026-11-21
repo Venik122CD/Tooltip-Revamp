@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:loom"
+  ],
+  "text": "tooltiprevamp.action.block.loom",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:loom"
+    ]
+  }
+}

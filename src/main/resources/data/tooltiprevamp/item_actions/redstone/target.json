@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:target"
+  ],
+  "text": "tooltiprevamp.action.redstone.target",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:target"
+    ]
+  }
+}

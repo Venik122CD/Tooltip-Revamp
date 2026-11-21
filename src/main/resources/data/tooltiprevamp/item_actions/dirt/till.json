@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:dirt"
+  ],
+  "text": "tooltiprevamp.action.dirt.till",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:dirt",
+      "minecraft:grass_block",
+      "minecraft:dirt_path"
+    ],
+    "ability": "hoe_till"
+  }
+}

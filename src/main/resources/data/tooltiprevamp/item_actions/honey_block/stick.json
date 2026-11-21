@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:honey_block"
+  ],
+  "text": "tooltiprevamp.action.honey_block.stick",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:honey_block"
+    ]
+  }
+}

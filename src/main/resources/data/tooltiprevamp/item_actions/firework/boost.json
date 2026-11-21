@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:firework_rocket"
+  ],
+  "text": "tooltiprevamp.action.firework.boost",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

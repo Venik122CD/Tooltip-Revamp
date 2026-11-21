@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:paper"
+  ],
+  "text": "tooltiprevamp.action.paper.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:book",
+      "minecraft:map",
+      "minecraft:firework_rocket"
+    ],
+    "ingredient": true
+  }
+}

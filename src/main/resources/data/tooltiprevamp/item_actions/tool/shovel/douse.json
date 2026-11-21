@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:wooden_shovel",
+    "minecraft:stone_shovel",
+    "minecraft:iron_shovel",
+    "minecraft:golden_shovel",
+    "minecraft:diamond_shovel",
+    "minecraft:netherite_shovel"
+  ],
+  "text": "tooltiprevamp.action.tool.shovel.douse",
+  "order": 12,
+  "trigger": {
+    "type": "item_ability",
+    "ability": "shovel_douse"
+  }
+}

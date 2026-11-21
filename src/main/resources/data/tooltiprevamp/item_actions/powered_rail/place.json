@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:powered_rail"
+  ],
+  "text": "tooltiprevamp.action.powered_rail.place",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:powered_rail"
+    ]
+  }
+}

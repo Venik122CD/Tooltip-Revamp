@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:honeycomb"
+  ],
+  "text": "tooltiprevamp.action.honeycomb.craft",
+  "order": 11,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:beehive",
+      "minecraft:honeycomb_block",
+      "minecraft:candle"
+    ],
+    "ingredient": true
+  }
+}

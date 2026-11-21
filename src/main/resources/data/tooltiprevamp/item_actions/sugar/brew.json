@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:sugar"
+  ],
+  "text": "tooltiprevamp.action.sugar.brew",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "potions": [
+      "minecraft:swiftness",
+      "minecraft:long_swiftness",
+      "minecraft:strong_swiftness"
+    ]
+  }
+}

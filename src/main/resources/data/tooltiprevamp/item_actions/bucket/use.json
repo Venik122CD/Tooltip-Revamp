@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:bucket"
+  ],
+  "text": "tooltiprevamp.action.bucket.use",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

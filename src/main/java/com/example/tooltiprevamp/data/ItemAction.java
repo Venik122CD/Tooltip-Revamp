@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public record ItemAction(ResourceLocation id, List<ItemMatcher> items, String text, int order, Trigger trigger) {
 
     public static ItemAction parse(ResourceLocation id, JsonObject json) {

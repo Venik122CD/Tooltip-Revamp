@@ -1,0 +1,19 @@
+{
+  "items": [
+    "minecraft:wheat_seeds",
+    "minecraft:melon_seeds",
+    "minecraft:pumpkin_seeds",
+    "minecraft:beetroot_seeds"
+  ],
+  "text": "tooltiprevamp.action.seeds.plant",
+  "order": 10,
+  "trigger": {
+    "type": "place_block",
+    "blocks": [
+      "minecraft:wheat",
+      "minecraft:melon_stem",
+      "minecraft:pumpkin_stem",
+      "minecraft:beetroots"
+    ]
+  }
+}

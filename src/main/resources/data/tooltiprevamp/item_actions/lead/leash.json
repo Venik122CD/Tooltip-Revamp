@@ -1,0 +1,24 @@
+{
+  "items": [
+    "minecraft:lead"
+  ],
+  "text": "tooltiprevamp.action.lead.leash",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:cow",
+      "minecraft:pig",
+      "minecraft:sheep",
+      "minecraft:horse",
+      "minecraft:donkey",
+      "minecraft:mule",
+      "minecraft:wolf",
+      "minecraft:cat",
+      "minecraft:llama",
+      "minecraft:goat",
+      "minecraft:fox",
+      "minecraft:chicken"
+    ]
+  }
+}

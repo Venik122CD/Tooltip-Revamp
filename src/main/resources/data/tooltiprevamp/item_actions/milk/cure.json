@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:milk_bucket"
+  ],
+  "text": "tooltiprevamp.action.milk.cure",
+  "order": 10,
+  "trigger": {
+    "type": "consume"
+  }
+}

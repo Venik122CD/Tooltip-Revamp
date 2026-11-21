@@ -1,0 +1,16 @@
+{
+  "items": [
+    "minecraft:wooden_hoe",
+    "minecraft:stone_hoe",
+    "minecraft:iron_hoe",
+    "minecraft:golden_hoe",
+    "minecraft:diamond_hoe",
+    "minecraft:netherite_hoe"
+  ],
+  "text": "tooltiprevamp.action.tool.hoe.till",
+  "order": 10,
+  "trigger": {
+    "type": "item_ability",
+    "ability": "hoe_till"
+  }
+}

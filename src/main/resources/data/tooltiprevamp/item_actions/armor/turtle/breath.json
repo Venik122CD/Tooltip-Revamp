@@ -1,0 +1,11 @@
+{
+  "items": [
+    "minecraft:turtle_helmet"
+  ],
+  "text": "tooltiprevamp.action.armor.turtle.breath",
+  "order": 10,
+  "trigger": {
+    "type": "equipped",
+    "slot": "head"
+  }
+}

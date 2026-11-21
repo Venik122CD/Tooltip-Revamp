@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:nether_star"
+  ],
+  "text": "tooltiprevamp.action.nether_star.beacon",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:beacon"
+    ],
+    "ingredient": true
+  }
+}

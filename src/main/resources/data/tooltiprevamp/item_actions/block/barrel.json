@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:barrel"
+  ],
+  "text": "tooltiprevamp.action.block.barrel",
+  "order": 10,
+  "trigger": {
+    "type": "interact_block",
+    "blocks": [
+      "minecraft:barrel"
+    ]
+  }
+}

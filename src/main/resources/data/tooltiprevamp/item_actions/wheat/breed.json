@@ -1,0 +1,15 @@
+{
+  "items": [
+    "minecraft:wheat"
+  ],
+  "text": "tooltiprevamp.action.wheat.breed",
+  "order": 10,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:cow",
+      "minecraft:sheep",
+      "minecraft:mooshroom"
+    ]
+  }
+}

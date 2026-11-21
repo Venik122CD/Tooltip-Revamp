@@ -1,0 +1,14 @@
+{
+  "items": [
+    "minecraft:bone"
+  ],
+  "text": "tooltiprevamp.action.bone.meal",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:bone_meal"
+    ],
+    "ingredient": true
+  }
+}

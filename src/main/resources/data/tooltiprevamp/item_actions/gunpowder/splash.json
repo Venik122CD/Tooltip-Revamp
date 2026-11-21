@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:gunpowder"
+  ],
+  "text": "tooltiprevamp.action.gunpowder.splash",
+  "order": 10,
+  "trigger": {
+    "type": "brew",
+    "results": [
+      "minecraft:splash_potion"
+    ]
+  }
+}

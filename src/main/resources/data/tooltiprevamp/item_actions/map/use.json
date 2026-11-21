@@ -1,0 +1,10 @@
+{
+  "items": [
+    "minecraft:map"
+  ],
+  "text": "tooltiprevamp.action.map.use",
+  "order": 10,
+  "trigger": {
+    "type": "use"
+  }
+}

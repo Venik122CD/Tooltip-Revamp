@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:gold_ingot"
+  ],
+  "text": "tooltiprevamp.action.gold.barter",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:piglin"
+    ]
+  }
+}

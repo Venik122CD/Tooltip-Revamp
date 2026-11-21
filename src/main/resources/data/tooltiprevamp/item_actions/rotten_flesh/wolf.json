@@ -1,0 +1,13 @@
+{
+  "items": [
+    "minecraft:rotten_flesh"
+  ],
+  "text": "tooltiprevamp.action.rotten_flesh.wolf",
+  "order": 11,
+  "trigger": {
+    "type": "use_on_entity",
+    "entities": [
+      "minecraft:wolf"
+    ]
+  }
+}

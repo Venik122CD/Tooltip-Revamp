@@ -1,0 +1,17 @@
+{
+  "items": [
+    "minecraft:copper_ingot"
+  ],
+  "text": "tooltiprevamp.action.copper.craft",
+  "order": 10,
+  "trigger": {
+    "type": "craft",
+    "results": [
+      "minecraft:spyglass",
+      "minecraft:lightning_rod",
+      "minecraft:brush",
+      "minecraft:copper_block"
+    ],
+    "ingredient": true
+  }
+}
